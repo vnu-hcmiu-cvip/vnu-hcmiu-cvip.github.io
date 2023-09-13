@@ -1,6 +1,6 @@
 # hcmiu-cvip.github.io
 
-To turn on the server, run
+To turn on the server, run the following
 ```
 cloudflared tunnel run
 ```
