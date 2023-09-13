@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+      <meta charset="utf-8">
+      <title>HCMIU CVIP Lab - Teaching</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="CVIP">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+     .topnav.responsive {position: relative;}
+     .topnav.responsive .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+     }
+     .topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+     }
+   }
+ </style>
+   </head>
+   <body>
+      <div class="container">
+         <header  id="overview">
+            <!-- <p class="lead"> International University - Vietnam National University HCM City </p>
+            <h1>Computer Vision and Image Processing Laboratory</h1> -->
+            <img src="images/thumbs/cvip-header.jpg">
+         </header>
+          <div class="masthead">
+            <div class="navbar">
+             <div class="navbar-inner">
+              <div class="container">
+               <div class="topnav" id="myTopnav">
+                 <a href="index.html">Home</a>
+                 <a href="people.html" >People</a>
+                 <a href="research.html">Research</a>
+                 <a href="cp.html">Competitive Programming</a>
+                 <a href="publications.html">Publications</a>
+                 <a class="active">Teaching</a>
+                 <a href="contact.html">Contact</a>
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                   <i class="fa fa-bars"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+         <hr>
+         <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#CCPP"> C/C++ Programming in Unix</a></li>
+                  <li><a href="#TMC"> Theoretical Models in Computing</a></li>
+                  <li><a href="#CP"> Competitive Programming</a></li>
+				      <li><a href="#PPL"> Principles of Programming Languages</a></li>
+                  <li><a href="#SA"> Software Architecture</a></li>
+				      <li><a href="#DIP"> Digital Image Processing</a></li>
+               </ul>
+            </div>
+            <div class="span8 offset1"> 
+               <p align='justify'>
+                  Our lab provides a diverse range of programming or algorithm modules which focuses on Competitive Programming and research-oriented implementation in Computer Vision.
+                  All of these courses are considered as internal training for motivated students.
+               </p>
+
+			   <section id="CCPP">
+                  <div class="page-header">
+                     <h3><a >C/C++ Programming in Unix</a></h3>
+                     <hr>
+                     <p align="justify">This course concentrates on learning the basics of programming languages which is the foundations for further studies in IT. 
+                        The course enables students to get familiar with C/C++ programming language in UNIX environment. 
+                        The course covers all basic C/C++ data structures, control flows, simple data structures as well as other advanced 
+                        topics which include pointers, bit operators, file processing, dynamic data types.</p>
+                     <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+                     <p><b>Semesters Taught:</b> Spring 2017.</p>
+                     <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>Lecture</th>
+                        </thead>
+                        <tbody>                           
+                           <tr>
+                              <td>01</td>
+                              <td><a >Introduction to Programming Language</a></td>
+                           </tr>
+                           <tr>
+                              <td>02</td>
+                              <td><a > Introduction to C/C++ Programming Language </a></td>
+                           </tr>
+                           <tr>
+                              <td>03</td>
+                              <td><a > Types, Operators and Expressions </a></td>
+                           </tr>
+                           <tr>
+                              <td>04</td>
+                              <td><a > Control Flow </a></td>
+                           </tr>
+                           <tr>
+                              <td>05</td>
+                              <td><a > Functions </a></td>
+                           </tr>
+                           <tr>
+                              <td>06</td>
+                              <td><a > Array </a></td>
+                           </tr>
+                           <tr>
+                              <td>07</td>
+                              <td><a > Pointers </a></td>
+                           </tr>
+                           <tr>
+                              <td>08</td>
+                              <td><a > String Processing </a></td>
+                           </tr>
+                           <tr>
+                              <td>09</td>
+                              <td><a > Structure Data Types </a></td>
+                           </tr>
+                           <tr>
+                              <td>10</td>
+                              <td><a > Basic Data Structures </a></td>
+                           </tr>
+                           <tr>
+                              <td>11</td>
+                              <td><a > C++ Standard Template Library (STL) </a></td>
+                           </tr>
+                           <tr>
+                              <td>12</td>
+                              <td><a > Bit Manipulation, Enumeration </a></td>
+                           </tr>
+                           <tr>
+                              <td>13</td>
+                              <td><a > File Processing </a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  <p align="justify"><b>Note:</b> You are recommended to complete a problem set of 177 basic exercises to complete this course.</a></p>
+				  </div>
+            </section>
+            
+			   <section id="TMC">
+               <div class="page-header">
+                  <h3><a >Theoretical Models in Computing</a></h3>
+                  <hr>
+                  <p align="justify">This course is oriented to those undergraduate students who require a working knowledge
+                     of numerical methods. Topics to be covered include solving nonlinear equations and linear
+                     systems, interpolation and least square method, numerical evaluation of derivatives, integral
+                     and solution of differential equation. The focus will be on understanding the solving
+                     techniques and the engineering meaning of diver problems, and not on rigorous profs.
+                  </p>
+                  <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+                  <p><b>Semesters Taught:</b> Spring 2017.</p>
+                  <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>Lecture</th>
+                     </thead>
+                     <tbody>                           
+                        <tr>
+                           <td>01</td>
+                           <td><a >Introduction to Numerical Methods</a></td>
+                        </tr>
+                        <tr>
+                           <td>02</td>
+                           <td><a > Errors & Taylor Series </a></td>
+                        </tr>
+                        <tr>
+                           <td>03</td>
+                           <td><a > Roots of Non-linear Equations </a></td>
+                        </tr>
+                        <tr>
+                           <td>04</td>
+                           <td><a > Linear Algebraic Equations </a></td>
+                        </tr>
+                        <tr>
+                           <td>05</td>
+                           <td><a > Optimization </a></td>
+                        </tr>
+                        <tr>
+                           <td>06</td>
+                           <td><a > Curve Fitting & Interpolation </a></td>
+                        </tr>
+                        <tr>
+                           <td>07</td>
+                           <td><a > Numerical Differentiation and Integration </a></td>
+                        </tr>
+                        <tr>
+                           <td>08</td>
+                           <td><a > Ordinary Differential Equations </a></td>
+                        </tr>
+                        <tr>
+                           <td>09</td>
+                           <td><a > Partial Differential Equations </a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               <p align="justify"><b>Note:</b> You are recommended to implement these numerical methods with a programming language.</a></p>
+           </div>
+         </section>
+
+			   <section id="CP">
+               <div class="page-header">
+                  <h3><a >Competitive Programming</a></h3>
+                  <hr>
+                  <p align="justify">
+                     This is a practical hands-on course that is intended for students who are
+                     interested in competitive programming and algorithmic challenges. In this course you will learn the
+                     techniques and skills needed to solve algorithmic programming problems.
+                  </p>
+                  <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+                  <p><b>Semesters Taught:</b> Spring 2017.</p>
+                  <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>Lecture</th>
+                     </thead>
+                     <tbody>                           
+                        <tr>
+                           <td>01</td>
+                           <td><a >Introduction to Competitive Programming</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>02</td>
+                           <td><a >Linear Data Structure &amp; Algorithms</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>03</td>
+                           <td><a >Complete Search Techniques</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>04</td>
+                           <td><a >Sub-problem Solving Techniques</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>05</td>
+                           <td><a >Big Number and Combinatorics</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>06</td>
+                           <td><a >Number Theory</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>07</td>
+                           <td><a >Probability and Set Theory</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>08</td>
+                           <td><a >Linear Algebra in Competitive Programming</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>09</td>
+                           <td><a >Introduction to Graph</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>10</td>
+                           <td><a >Shortest Path Problems on Graph</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>11</td>
+                           <td><a >Max flow problem &amp; Min Cut problem on Graph</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>12</td>
+                           <td><a >Special Graphs: Tree</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>13</td>
+                           <td><a >Special Graphs: Bipartite Graph</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>14</td>
+                           <td><a >Advanced Data Structure: Hash Table, Segment Tree, Binary Index Tree</a></td>
+                        </tr>                     
+                        <tr>
+                           <td>15</td>
+                           <td><a >Advanced Data Structure: Suffix Trie/Tree/Array, Union Disjoint Set</a></td>
+                        </tr>                     
+                        <tr>
+                           <td>16</td>
+                           <td><a >String Processing &amp; Matching</a></td>
+                        </tr>                     
+                        <tr>
+                           <td>17</td>
+                           <td><a >Geometry – Session 1: Two-Dimensional Geometry</a></td>
+                        </tr>                  
+                        <tr>
+                           <td>18</td>
+                           <td><a >Geometry – Session 2: Three-Dimensional Geometry</a></td>
+                        </tr>                  
+                        <tr>
+                           <td>19</td>
+                           <td><a >Dynamic Programming in 1D and 2D spaces</a></td>
+                        </tr>                    
+                        <tr>
+                           <td>20</td>
+                           <td><a >Dynamic Programming with String</a></td>
+                        </tr>                 
+                        <tr>
+                           <td>21</td>
+                           <td><a >Dynamic Programming with Knapsack Problem and Variant Topics</a></td>
+                        </tr>                    
+                        <tr>
+                           <td>22</td>
+                           <td><a >Dynamic Programming with Geometry</a></td>
+                        </tr>                    
+                        <tr>
+                           <td>23</td>
+                           <td><a >Dynamic Programming on Non-linear Data Structure: Graph and Tree</a></td>
+                        </tr>            
+                        <tr>
+                           <td>24</td>
+                           <td><a >Dynamic Programming with Game Theory and Simulation</a></td>
+                        </tr>                 
+                        <tr>
+                           <td>25</td>
+                           <td><a >The Competitive Programming Contest Practice</a></td>
+                        </tr>     
+                     </tbody>
+                  </table>
+               <p align="justify"><b>Note:</b> There are lots of practice contests associating with this course. 
+                  You are recommended to practice more on <a href="http://codeforces.com/?mobile=false">Codeforces</a>, 
+                  <a href="https://www.codechef.com/">CodeChef</a> and other online judges.
+                  Be calm and keep fighting !!</a></p>
+           </div>
+         </section>
+            
+			   <section id="PPL">
+               <div class="page-header">
+                  <h3><a >Principles of Programming Languages</a></h3>
+                  <hr>
+                  <p align="justify"> This course provides students the basic components and important principles of
+                     programming languages. It covers the subjects on programming language paradigms, logicprogramming languages, subprograms and Software processes. 
+                     Students can improve their programming and software engineering skills, increase ability to express ideas and further
+                     their research activities. </p>
+                  <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+                  <p><b>Semesters Taught:</b> Spring 2017.</p>
+                  <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>Lecture</th>
+                     </thead>
+                     <tbody>                           
+                        <tr>
+                           <td>01</td>
+                           <td><a >Introduction to Programming Languages</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>02</td>
+                           <td><a >Evolution of the Major Programming Languages</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>03</td>
+                           <td><a >Evolution of the Major Programming Languages</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>04</td>
+                           <td><a >Software processes Describing Syntax and Semantics</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>05</td>
+                           <td><a >Lexical and Syntax Analysis</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>06</td>
+                           <td><a >Names, Bindings, Type Checking, and Scopes</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>07</td>
+                           <td><a >Agile Software Development</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>08</td>
+                           <td><a >Data Types</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>09</td>
+                           <td><a >Expressions and Assignment Statements</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>10</td>
+                           <td><a >Expressions and Assignment Statements</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>11</td>
+                           <td><a >Statement-Level Control Structures</a></td>
+                        </tr>                       
+                        <tr>
+                           <td>12</td>
+                           <td><a >Subprograms</a></td>
+                        </tr>   
+                     </tbody>
+                  </table>
+               <!-- <p align="justify"><b>Note:</b> If you notice a mistake, please email me to let me know so I can update the content.</a></p> -->
+           </div>
+         </section>
+			   <section id="SA">
+               <div class="page-header">
+                  <h3><a >Software Architecture</a></h3>
+                  <hr>
+                  <p align="justify">
+                     Provides the student with a thorough understanding of varying methodologies and
+                     techniques in analysis, design and implementation of information system by using UML.
+                  </p>
+                  <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+                  <p><b>Semesters Taught:</b> Spring 2017.</p>
+                  <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>Lecture</th>
+                     </thead>
+                     <tbody>                           
+                        <tr>
+                           <td>01</td>
+                           <td><a >Introduction to Software Architectures</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>02</td>
+                           <td><a >Requirements</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>03</td>
+                           <td><a >Usecase Modelling</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>04</td>
+                           <td><a >Dynamic Modelling</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>05</td>
+                           <td><a >State-Dependent Dynamic</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>06</td>
+                           <td><a >Data Modeling</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>07</td>
+                           <td><a >Normal Form in Priciples of Database</a></td>
+                        </tr>                         
+                        <tr>
+                           <td>08</td>
+                           <td><a >Structural Modeling</a></td>
+                        </tr>   
+                     </tbody>
+                  </table>
+               <p align="justify"><b>Note:</b> There is no text-book referenced in this course.</a></p>
+           </div>
+         </section>
+
+         <section id="DIP">
+            <div class="page-header">
+               <h3><a >Digital Image Processing</a></h3>
+               <hr>
+               <p align="justify">
+                  This course helps students discuss on digital image processing fundamentals; review of Digital
+                  Signal Processing algorithms such as Discrete Fourier Transform; intensity transforms,
+                  frequency domain filtering; image restoration and reconstruction; color image processing;
+                  multiresolution processing; image compression; morphological image processing.
+               </p>
+               <!-- <p><b>Prerequisite: </b><a href="http://mechanical.illinois.edu/courses/me-310-fundamentals-fluid-dynamics"><b>ME 310</b></a> or <a href="http://mechanical.illinois.edu/blogs/overview-tam-335-fluid-mechanics"><b>TAM 335</b></a>.</p>
+               <p><b>Semesters Taught:</b> Spring 2017.</p>
+               <p><b>Course Information:</b> <a href="pdf/ME320/ME%20320%20Syllabus.pdf">Syllabus</a></p> -->
+               <table class="table table-striped">
+                  <thead>
+                     <tr>
+                        <th>#</th>
+                        <th>Lecture</th>
+                  </thead>
+                  <tbody>                           
+                     <tr>
+                        <td>01</td>
+                        <td><a >Introduction to Digital Image</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>02</td>
+                        <td><a >Core Modules in Image Processing</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>03</td>
+                        <td><a >Region Processing in Images</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>04</td>
+                        <td><a >Point Processing in Images</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>05</td>
+                        <td><a >Implementation with TensorFlow</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>06</td>
+                        <td><a >Histogram Analysis</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>07</td>
+                        <td><a >Feature Engineering</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>08</td>
+                        <td><a >Meanshift and Camshift</a></td>
+                     </tr>                         
+                     <tr>
+                        <td>09</td>
+                        <td><a >Inpainting</a></td>
+                     </tr>                       
+                     <tr>
+                        <td>10</td>
+                        <td><a >Machine Learning in Image Processing</a></td>
+                     </tr>                       
+                     <tr>
+                        <td>11</td>
+                        <td><a >Deep Learning in Image Processing</a></td>
+                     </tr>       
+                  </tbody>
+               </table>
+            <p align="justify"><b>Note:</b> This is a research-oriented course for motivated students.</a></p>
+        </div>
+      </section>
+
+			   
+            </div>
+         </div>
+      </div>
+      <footer id="footer">
+         <div class="container-fluid">
+            <div class="row-fluid">
+               <div class="span5">
+                  <h3>Contact Information</h3>
+                  <p><b>Office Hours: </b>Monday-Saturday (8.30am - 5.30pm)</p>
+                  <p><b>Phone: </b>(+84)-(028)-3724-4270 (Ext: 3433)</p>
+                  <!-- <p><b>Cell: </b>617-981-9247</p> -->
+                  <!-- <p><b>Email: </b><a href="mailto:hcmiu.cvip@gmail.com">hcmiu.cvip@gmail.com</a></p> -->
+                  <a href="mailto:hcmiu.cvip@gmail.com">Email</a>
+               </div>
+               <div class="span2">
+                  <a href="https://hcmiu.edu.vn/"><img src = "images/thumbs/Logo-CVIP.png" style="max-width: 60%;"/></a>
+               </div>
+               <div class="span5">
+                  <h3>Address</h3>
+                  <p>Computer Vision and Image Processing Laboratory<br>
+                     -----------<br>
+                     International University - Vietnam National University HCMC<br>
+                     School of Computer Science and Engineering<br>
+                     Quarter 6, Linh Trung Ward, Thu Duc District<br>
+                     Ho Chi Minh 700000, Vietnam<br>
+                     Block A1, Room 611<br>
+                  </p>
+                  <a href="https://goo.gl/maps/eX4gipJAkzcoCzP16">Show Map</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+      </script>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+       </script>
+   </body>
+</html>

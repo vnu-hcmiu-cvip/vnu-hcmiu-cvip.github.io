@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>HCMIU CVIP Lab - Research</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="CVIP">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+   <link href="css/theme.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      body {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+         overflow: hidden;
+         background-color: #333;
+      }
+
+      .topnav a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+      }
+
+      .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+      }
+
+      .topnav a.active {
+         background-color: #4CAF50;
+         color: white;
+      }
+
+      .topnav .icon {
+         display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+         .topnav a:not(:first-child) {
+            display: none;
+         }
+
+         .topnav a.icon {
+            float: right;
+            display: block;
+         }
+      }
+
+      @media screen and (max-width: 600px) {
+         .topnav.responsive {
+            position: relative;
+         }
+
+         .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+         }
+
+         .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <header id="overview">
+         <!-- <p class="lead"> International University - Vietnam National University HCM City </p>
+            <h1>Computer Vision and Image Processing Laboratory</h1> -->
+         <img src="images/thumbs/cvip-header.jpg">
+      </header>
+      <div class="masthead">
+         <div class="navbar">
+            <div class="navbar-inner">
+               <div class="container">
+                  <div class="topnav" id="myTopnav">
+                     <a href="index.html">Home</a>
+                     <a href="people.html">People</a>
+                     <a class="active">Research</a>
+                     <a href="cp.html">Competitive Programming</a>
+                     <a href="publications.html">Publications</a>
+                     <a href="education.html">Teaching</a>
+                     <a href="contact.html">Contact</a>
+                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="row-fluid">
+         <div class="span3 bs-docs-sidebar" id="navparent">
+            <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+               <li><a href="#statemet"> Research Statement </a></li>
+               <li><a href="#trs"> Theoretical Research </a></li>
+               <li><a class="subhead" href="#bmfd"> Background Modelling and Foreground Detection </a></li>
+               <!-- <li><a class="subhead" href="#tensormog"> TensorMoG </a></li> -->
+               <!-- <li><a class="subhead" href="#hvr"> High Variation Removal (HVR) </a></li> -->
+               <li><a class="subhead" href="#odis"> Occlusion Detection in Image Segmentation </a></li>
+               <li><a class="subhead" href="#vehicledetfilter"> Preprocessing Filters for Vehicle Detection </a></li>
+               <!-- <li><a class="subhead" href="#shadow"> Shadow Removal for Vehicle Detection </a></li> -->
+               <!-- <li><a class="subhead" href="#reflectremoval"> Reflection Removal for Vehicle Detection </a></li> -->
+
+               <li><a href="#tssdl"> Applied Research: DL-based TSS </a></li>
+               <li><a class="subhead" href="#introdl"> Overview </a></li>
+               <li><a class="subhead" href="#early"> Early Release </a></li>
+               <li><a class="subhead" href="#award"> International Recognition <img src="images/thumbs/cp/new.gif"
+                        width="15%" /> </a></li>
+               <li><a href="#tssml"> Applied Research: ML-based TSS </a></li>
+               <li><a class="subhead" href="#intro"> Overview </a></li>
+               <li><a class="subhead" href="#scenerecognition"> Traffic Scene Recognition </a></li>
+               <li><a class="subhead" href="#bgs"> Background Subtraction </a></li>
+               <li><a class="subhead" href="#daytime-vehicledet"> Daytime Vehicle Detection</a></li>
+               <li><a class="subhead" href="#nighttime-vehicledet"> Nighttime Vehicle Detection</a></li>
+               <li><a class="subhead" href="#license-plate"> Vietnamese License Plate Recognition</a></li>
+               <li><a class="subhead" href="#abandon-object"> Abandoned Vehicle Detection</a></li>
+            </ul>
+         </div>
+         <div class="span8 offset1">
+            <img src="images/thumbs/cp/new.gif" /> Our newest achievements have been updated <a
+               href="#award"><b>here</b></a> !!
+            <hr>
+            <section id="statemet">
+               <div class="page-header">
+                  <h2>Research Statement</h2>
+                  <hr>
+                  <p align="justify">
+                     Research in our lab focuses on branches of computer vision.
+                     In the field, we are intrigued by visual functionalities that give rise to semantically meaningful
+                     interpretations of the visual world.
+                     In computer vision, we aspire to develop intelligent algorithms that perform important visual
+                     perception tasks such as object recognition,
+                     scene categorization, etc. Our curiosity leads us to study the underlying imaging learning
+                     mechanisms that enable the human visual system to perform high level
+                     visual tasks with amazing speed and efficiency.
+                  </p>
+                  <p align='center'>
+                     <img src="images/thumbs/research/cover-001.gif" style="max-width: 48%;margin-right: 3%;" />
+                     <img src="images/thumbs/research/cover-002.gif" style="max-width: 48%;" /><br />
+                     <!-- <img src="images/thumbs/research/background.gif" class="float-right" style="max-width: 43%;"/><br/> -->
+                  </p>
+               </div>
+            </section>
+            <section id="trs">
+               <div class="page-header">
+                  <h2>Theoretical Research</h2>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <section id="bmfd">
+                        <h3>Background Modelling and Foreground Detection</h3>
+                        <br />
+                     </section>
+                     <section id="tensormog">
+                        <h4>TensorMoG: Tensor-driven background modelling and foreground detection</h4>
+                        <p align='justify'>
+                           Background subtraction is a powerful technique in the field of Computer Vision for extraction
+                           of motion features known as foregrounds.
+                           Among the many techniques published from the research community, statistical unsupervised
+                           learning variants of the Gaussian Mixture Model are most widely used in practice.
+                           The choice can be rationalized because the contexts of scenes in real time are so dynamic
+                           that a supervised data-driven model (e.g. a deep learning model) currently cannot reliably
+                           interpolate predictions on unseen data.
+                           Therefore, this work proposes an unsupervised, parallelized, and tensor-based approach that
+                           algorithmically models backgrounds of scenes, that can be used for segmentation of motion
+                           attributes.
+                           Conducted experiments suggest that the proposed model is not only efficient and effective,
+                           but also highly integrable into a mobile surveillance system that utilize multi-processing
+                           technologies such as GPU, TPU, etc.<br /><br />
+
+                           Published research of GMM and its variants has showcased GMM's capability at background
+                           modeling at the pixel level.
+                           They accomplish their tasks via algorithmically maximizing the expectation (i.e. the EM
+                           algorithm) of a multi-modular probability density function known as the Mixture of Gaussians.
+                           Whilst online learning, the model simply selects from its components the background
+                           constituents satisfying certain criteria.
+                           Thus, GMM background models are universally capable of exhibiting rapid statistical
+                           adaptation in terms of color space for capturing spatio-temporal scene dynamics,
+                           thereby making them a commonly opted tool for many applications. Meanwhile, published
+                           research of deep neural networks (DNNs) have also reasonably demonstrated their
+                           effective generalization capabilities on background modeling, and foreground extraction.
+                           These models employ the use of high-powered
+                           multi-processing technologies in order to effectively learn on large-scale dataset to produce
+                           high performance in accuracy. However, problems arise and challenge not
+                           only practical usage of these background modeling frameworks, but also empirical studies into
+                           them. Beside from the lack of transparency with the inner
+                           workings of these DNNs models, and great computational expenses, they still cannot account
+                           for all the contextually different scenarios of the real world.
+                           <br /><br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/tensormog.gif" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           On deployment, we tested using the same configurations on the aforementioned dataset on a
+                           CUDA-capable mobile board called Jetson Nano B01.
+                           The recorded speed is ~27fps on this device on image dimensions of 320 x 240, thereby
+                           concluding that the model can process in real-time.
+                           Due to the nature of its parallel processing, the proposed model is also able to process
+                           signals of multiple cameras at the same time via tensor concatenation.
+                           With this feature along its accuracy and impressive speed, the proposed model is capable of
+                           providing a major advantage for mobile traffic surveillance systems.
+                        </p>
+                     </section>
+                     <hr />
+                     <section id="hvr">
+                        <h4>HVR: Background subtraction with high variation removal</h4>
+                        <p align='justify'>
+                           Background subtraction has been a fundamental task in video analytics and smart surveillance
+                           applications. In the
+                           field of background subtraction, Gaussian mixture model is a canonical model for many other
+                           methods. However, the unconscious
+                           learning of this model often leads to erroneous motion detection under high variation scenes.
+                           This article proposes a new method
+                           that incorporates entropy estimation and a removal framework into the Gaussian mixture model
+                           to improve the performance
+                           of background subtraction. Firstly, entropy information is computed for each pixel of a frame
+                           to classify frames into silent or high
+                           variation categories. Secondly, the removal framework is used to determine which frames from
+                           the background subtraction process
+                           are updated. The proposed method produces precise results with fast execution time, which are
+                           two critical factors in surveillance
+                           systems for more advanced tasks. We used two publicly available test sequences from the 2014
+                           Change Detection and Scene
+                           background modeling data sets and internally collected data sets of scenes with dense
+                           traffic.<br /><br />
+
+                           In practice, novel algorithms have a compromise between accuracy and speed performance. Some
+                           methods performed many sophisticated operations to obtain acceptable results that result in
+                           consuming high computing resources, which is unsuitable to be deployed
+                           for any practical TSS that require background subtraction. Among
+                           proposed methods, GMM is the most widely used method in TSS
+                           because of its capability to tackle dynamic scenes and noise. However, it can generate
+                           overlapping updates in case of high-variation
+                           motions where other incorrect models replace the essential background models.<br /><br />
+                        </p>
+                        <div style="width:50%;float: left;">
+                           <img src="images/thumbs/research/HVR-01.gif" style="max-width: 100%;margin-right: 3%;" />
+                           <p>Input image</p>
+                        </div>
+                        <div style="width:50%;float: left;">
+                           <img src="images/thumbs/research/HVR-02.gif" style="max-width: 100%;" />
+                           <p>Extracted foreground<br /><br /></p>
+                        </div>
+                        <!-- <p align='center'>
+                              <img src="images/thumbs/research/HVR-02.gif" style="max-width: 47%;margin-right: 3%;"/>
+                              <img src="images/thumbs/research/HVR-01.gif" style="max-width: 47%;"/><br/>
+                           </p> -->
+                        <p align='justify'>
+                           In this work, the authors proposed a method which not only
+                           increase the precision in segmentation but also reduce the processing
+                           time. We define two types of the image frame in input sequences:
+                           silent frames which are reliable to update background model, and
+                           high variation frames, which contain a high degree of motion. The
+                           best approach to reduce false update of background model and a
+                           wasteful process is to remove high variation frames from input data.
+                           We present a method based on entropy calculation, which determines
+                           the complexity of the per-pixel model and a high variation removal
+                           method to manage the updating of the background model.<br /><br />
+                        </p>
+                     </section>
+                     <hr />
+                     <section id="odis">
+                        <h3>Occlusion Detection in Image Segmentation</h3>
+                        <p align='justify'>
+                           Occlusions detection is a famous problem in optical flow in particular
+                           and the field of image processing in general. Moreover, most problems in
+                           video processing such as object tracking, 3D object reconstruction, motion
+                           blurring, and unexpected objects removing are difficult problems to optimize due
+                           to the lack of the motion vector’s information at the pixels in the occlusion regions
+                           between two consecutive frames.<br /><br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/OD-01.gif" style="text-align: center;" />
+                           <!-- <img src="images/thumbs/research/OD-02.gif" class="float-right"/> -->
+                           <!-- <img src="images/thumbs/research/OD-03.gif" class="float-right"/> -->
+                           <!-- <img src="images/thumbs/research/HVR-02.gif" class="float-right"  style="max-width: 45%;"/><br/> -->
+                           <!-- <img src="images/thumbs/research/background.gif" class="float-right" style="max-width: 43%;"/><br/> -->
+                        </p>
+                        <p align='justify'>
+                           One of the ways to improve the quality of video processing applications
+                           is to detect occlusion regions accurately. In reality, there are many methods are
+                           used to detect occlusion regions. These methods can be divided into two main
+                           groups: the computation of two PDEs (Partial Differential Equation) optical flow
+                           problems and the combination of forward optical flow and image segmentation.<br /><br />
+                        </p>
+                        <p align='center'>
+                           <!-- <img src="images/thumbs/research/OD-01.gif" class="float-right"/> -->
+                           <!-- <img src="images/thumbs/research/OD-02.gif" class="float-right"/> -->
+                           <img src="images/thumbs/research/OD-03.gif" style="text-align: center;" />
+                           <!-- <img src="images/thumbs/research/HVR-02.gif" class="float-right"  style="max-width: 45%;"/><br/> -->
+                           <!-- <img src="images/thumbs/research/background.gif" class="float-right" style="max-width: 43%;"/><br/> -->
+                        </p>
+                        <p align='justify'>
+                           We also proposed a method
+                           that can detect occlusion region by calculating only one partial differential equation
+                           problem. It means that the estimation of optical flow procedure is only called once
+                           and this does not use boundary detection method or the segmentation method. <br /><br />
+                        </p>
+                     </section>
+                     <hr />
+
+                     <!-- <li><a class="subhead" href="#vehicledetfilter"> Preprocessing filters for Vehicle Detection </a></li> -->
+                     <section id="vehicledetfilter">
+                        <h3>Pre-processing Filters for Vehicle Detection</h3>
+                        <br />
+                     </section>
+                     <section id="shadow">
+                        <h4>Shadow Removal for Vehicle Detection in Traffic Surveillance System</h4>
+                        <p align='justify'>
+                           One of the barriers against building an effective traffic
+                           surveillance system (TSS) is the existence of shadows. They
+                           restrain the accuracy of object monitoring in two most prominent ways. Firstly, cast shadows
+                           that lie beside conveyances
+                           deforms vehicle shapes and leads to miscalculations of their
+                           geometrical features. Secondly, shadows confuse a TSS as
+                           they fill the inter-vehicle spaces, making it prone to mistaken
+                           groupings of different vehicles. Therefore, a TSS in countries
+                           such as Vietnam where it is almost always sunny especially
+                           requires good shadow suppressions.<br /><br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/shadow-2.png" class="float-right" style="max-width: 45%;" />
+                        </p>
+                        <p align='justify'>
+
+                           The proposed shadow removal algorithm is based on edge information from both
+                           the input frame and the lightness component of the HSV color model that works
+                           robustly in daytime traffic scenes. The advantages of our method are: 1) the algorithm
+                           is designed as a filter, hence increasing the adaptability and performance; 2) the
+                           algorithm is robust to a variety of shadow orientations, shapes, and appearances under
+                           different lighting conditions; 3) the algorithm can precisely remove shadows from the
+                           background. Experiments have been carried out to test the performance of our algorithm.
+                           The results show that our algorithm performs better than previous methods. It can
+                           produce satisfactory vehicle segments when shadows appear in both smooth and
+                           textured backgrounds.<br /><br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/shadow.png" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           Experiments, which have been carried out to test the performance
+                           of our algorithm, showed that our method comes with a good
+                           compromise between shadow detection accuracy and shadow
+                           discrimination accuracy rates by producing satisfactory vehicle
+                           segments when shadows appear in both smooth and textured
+                           backgrounds. In the end, our method still runs in real-time
+                           speed either when processing a single or multiple traffic
+                           sequences. <br /><br />
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="reflectremoval">
+                        <h4>Reflection Detection and Removal for Vehicle Detection in Rainy Traffic Scenes</h4>
+                        <p align='justify'>
+                           Reflection detection and removal have always played a
+                           crucial role in traffic surveillance systems that are based
+                           on computer vision techniques. In this work, we focus
+                           on solving the problems of shadow in rainy conditions.
+                           The reflections, post two
+                           main problems. Firstly, in daytime condition, the cast
+                           shadow is normally a uniform gray region. Meanwhile
+                           in rainy conditions, the vehicle reflection consists of
+                           a variety of colors. This greatly reduces the accuracy
+                           of shadow detection algorithms which are solely based
+                           on finding the intensity differences between the image
+                           background and foreground. Secondly, headlights are
+                           also reflected on the road which distort the length and
+                           shape of vehicles. Since reflections also have the same
+                           motion as the vehicles casting them, hence distort the
+                           shapes, sizes, and colors of vehicles. Thus, it can cause
+                           significant errors in vehicle detection and classification.<br /><br />
+
+                           In this research, we propose a reflection detection and
+                           removal algorithm that can work robustly in rainy conditions using data from actual traffic
+                           surveillance video.
+                           We also incorporate the
+                           HSV color space mentioned in to our method. We
+                           will combine information from both LAB color space
+                           and HSV color space to detect the reflected areas. This
+                           method can provide good results, and hence achieve
+                           better accuracy when removing reflection but still maintain vehicles’ textures.
+                           The reflection removal is performed by gradually scaling the intensity of reflected
+                           areas to match with the average value of the best-fit
+                           neighbor region. In the proposed method,
+                           we use the meanshift algorithm to calculate the average
+                           intensity value for each neighbor region and lighten
+                           up the shadow parts according to it. Finally, we also
+                           propose a simple technique to deal with headlights’
+                           reflections. We first investigate the L channel to locate
+                           the highest intensity pixels, which represent the source
+                           of headlight and its reflection. Then the headlights with
+                           the reflection that has soundable amount of displacement are grouped together.
+                           After that we simply remove the bottom segment as it represents the reflection.<br /><br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/reflect.png" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           The proposed method is also designed to deal
+                           with the cases of headlight reflection. By taking the
+                           advantage of the intensity differences between headlights and their reflections, we can
+                           easily detect and
+                           segment them. We notice the fact that on wet road
+                           surface reflections always reside under the headlights.
+                           We simply remove reflections by rejecting the lower
+                           segments. Several experiments have shown promising
+                           results with detecting and removing vehicle reflections.<br /><br />
+                        </p>
+                     </section>
+                  </div>
+               </div>
+            </section>
+            <hr />
+
+            <section id="tssdl">
+               <div class="page-header">
+                  <h2>Applied Research: Deep-learning-based Traffic Monitoring System</h2>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <section id="introdl">
+                        <h3>Overview</h3>
+                        <p align='justify'>
+                           <b>Premise:</b> Due to the rapid growth in the number of on-road vehicles, the past decade
+                           has seen a dramatic increase in the demand for analyses of traffic capacity. Hence, automatic
+                           estimation of traffic density has become pivotal in maintaining perpetual surveillance while
+                           reducing human labour. Nevertheless, tackling traffic density estimation with cameras across
+                           a plethora of scenarios, weather conditions, view perspectives and lighting is highly
+                           complex. The domain of video sequences in the spatio-temporal color space is hardly
+                           constrained in terms of context.
+                           <br /><br />
+
+                           <b>Our solutions:</b> State-of-the-art technologies cohesively associates with a wide range
+                           of research works that focus on extracting static and dynamic attributes regarding vehicles'
+                           appearances and motion characteristics, including locations, shapes, sizes, categories,
+                           trajectories, paths of movement, and time-series records of motion within the observational
+                           views of monitoring cameras. In dealing with the estimation of vehicle counts in a
+                           path-based, type-specific manner across a hardly constrained domain, we formulate our
+                           solution by following a Deep-Learning-based approach.
+
+
+                           <!-- So far, modern advances have improved the overall accuracy of digital traffic analytic systems. However, in real-world applications, taking into account scaling-up strategies of practical implementations, the vehicle counting task needs to be carried out on computationally limited platforms at real-time execution efficiency. As a result, mimicking in-road hardware sensor-based counting on IoT devices necessitates that vision solution settings well utilize hardware resources in terms of computations and memory complexities.<br/><br/> -->
+                        </p>
+                     </section>
+                     <hr />
+
+                     <section id="early">
+                        <h3>Early Release</h3>
+                        <p align='justify'>
+                           In the early stage of our research, we proposed a multi-contextual framework of vehicle
+                           counting to present in
+                           <a href="http://ai.icti-hcm.gov.vn/">Ho Chi Minh City Artificial Intelligence Application
+                              Challenge 2020</a>.
+                           The theme of the AI-Challenge 2020 contest is "Artificial Intelligence with Smart Traffic".
+                           In this contest, the contest team will count the number of vehicles for each vehicle moving
+                           in different directions in the video recorded from traffic cameras in Ho Chi Minh City.
+                           This problem serves to analyze the volume of vehicles on the roads, thereby supporting
+                           the proposal and design of solutions to reduce traffic congestion. <br /><br />
+
+                           Aiming at practical solutions that can be applied in practice, the final ranking results
+                           of the competing teams are evaluated on both criteria: accuracy (results of counting the
+                           number of vehicles each type) and efficiency (algorithm execution time).<br /><br />
+
+                           <b>Requirements:</b> Due to the high complexity of the data domain, the required
+                           computational expenses were inevitable high. Our first
+                           solution was proposed for inference using high-end desktops of at least a GPU of GeFORCE
+                           1080Ti.<br /><br />
+
+                           <b><u><i>Contest regulations</i></u></b>:<br />
+                           The contestants will develop an algorithm to count the number of vehicles of four types of
+                           vehicles:
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'><b>Type 1</b>: 2-wheel vehicle such as bicycle, motorbike</p>
+                           </li>
+                           <li>
+                              <p align='justify'><b>Type 2</b>: 4-7 seat car such as car, taxi, pickup ...</p>
+                           </li>
+                           <li>
+                              <p align='justify'><b>Type 3</b>: car with over 7 seats such as bus, bus</p>
+                           </li>
+                           <li>
+                              <p align='justify'><b>Type 4</b>: truck, container, fire truck</p>
+                           </li>
+                        </ul><br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/aic-hcmc-2.png" class="float-right"
+                              style="max-width: 80%; text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           Each traffic video is recorded at a specific traffic camera. In each traffic video,
+                           the organizers will define an observation area (called Region-of-Interest , abbreviated as
+                           ROI)
+                           and the direction of movement (called Motion-of-Interest, abbreviated as MOI):
+                        </p>
+                        <ul>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'><b>Field of view</b> (ROI) is represented as a polygon, limiting the
+                                 space
+                                 to focus on the observation and processing to detect traffic.</p>
+                              </p>
+                           </li>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'><b>Direction of Movement</b> (MOI) helps identify lanes moving in
+                                 different specific directions in the video.</p>
+                              </p>
+                           </li>
+                        </ul>
+                        <p align='justify'>
+                           In the illustration image below, the field of view (ROI) is defined as a polygon with a red
+                           border.
+                           There are 5 directions of movement (MOI), shown as 5 arrows.<br /><br />
+                        </p>
+                        <p align='justify'>
+                           This is our early-released version.
+                           The solution won <a
+                              href="https://web.archive.org/web/20201022034542/http://aichcmc.ml/"><b>Second
+                                 Prize</b></a> through
+                           the evaluation on the private test data set of
+                           <a href="http://ai.icti-hcm.gov.vn/">Ho Chi Minh City Artificial Intelligence Application
+                              Challenge 2020</a>.
+                           This work was directed by <a><b>Dr. Synh Viet-Uyen Ha</b></a> and was implemented by
+                           <a><b>Mr. Nhat Minh Chung</b></a> (lead),
+                           <a><b>Mr. Hung Ngoc Phan</b></a>,
+                           <a><b>Mr. Khoi Dinh Ngo</b></a>,
+                           <a><b>Mr. Minh-Thong Duy Nguyen</b></a>, and
+                           <a href="https://it.hcmiu.edu.vn/user/dtnhan/"><b>Mr. Nhan Tam Dang</b></a>. <br /><br />
+
+                           We propose the methodology with four main modules:
+                        </p>
+                        <img src="images/thumbs/research/aic-hcmc.png" class="float-right" style="max-width: 48%;" />
+                        <ol>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'>Vehicle Detection and Classification;</p>
+                              </p>
+                           </li>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'>Vehicle Tracking; </p>
+                              </p>
+                           </li>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'>Determine the motion direction and the moving area of ​​the vehicle;
+                              </p>
+                              </p>
+                           </li>
+                           <li>
+                              <p align="justify">
+                              <p align='justify'>Vehicle counting </p>
+                              </p>
+                           </li>
+                        </ol>
+
+                        <p align='justify'>
+                           A sequence of consecutive input images extracted from the camera is processed through the
+                           Vehicle Detection and Classification Module.
+                           Our team of contestants uses a deep learning model that has been trained on images that are
+                           tagged and randomly extracted from the hand-labelled data.
+                           After detecting and classifying the object, we will omit the objects that are outside of the
+                           Motion-of-interest (MOI) field of view (i.e., an area different
+                           from the Region-of-interest (ROI) we construct to suppress the jamming directions).
+
+                           For the tracking module we use is built on the concept of the Simple Online and Realtime
+                           Tracking (SORT) methodology.
+                           Objects will be matched against each other based on three conditions.
+                           The objects are instantiated if the match is not successful. Conversely, the objects will be
+                           kept alive until they no longer exist in the processing field.
+
+                           We, then, determine the travel direction and travel area of ​​the vehicle.
+
+                           Finally, when vehicles move out of the field of view, we will execute the counter for the
+                           respective vehicle type and the MOI movement direction
+                           that was previously determined. At the same time, results of the counter are exported to the
+                           result file for further storage.<br /><br />
+
+                        </p>
+
+                        <iframe class="map-frame" src="https://www.youtube.com/embed/7R5wk_WzwgI"></iframe>
+
+                        <!-- <p align='justify'>  
+                              This is our early-released version. 
+                              The solution won <a href="https://web.archive.org/web/20201022034542/http://aichcmc.ml/"><b>Second Prize</b></a> through 
+                              the evaluation on the private test data set of 
+                              <a href="http://ai.icti-hcm.gov.vn/">Ho Chi Minh City Artificial Intelligence Application Challenge 2020</a>.
+                              This work was directed by <a><b>Dr. Synh Viet-Uyen Ha</b></a> and was implemented by 
+                              <a><b>Mr. Nhat Minh Chung</b></a>,
+                              <a><b>Mr. Hung Ngoc Phan</b></a>,
+                              <a><b>Mr. Khoi Dinh Ngo</b></a>,
+                              <a><b>Mr. Minh-Thong Duy Nguyen</b></a>, and
+                              <a href="https://it.hcmiu.edu.vn/user/dtnhan/"><b>Mr. Nhan Tam Dang</b></a>.                              
+                           </p> -->
+                     </section>
+                     <hr>
+                     <section id="award">
+                        <h3>International Recognition</h3>
+                        <h4>The 6th NVIDIA AI CITY CHALLENGE (2022)</h4>
+                        <h5>Challenge Track 2: Tracked-Vehicle Retrieval by Natural Language Descriptions</h5>
+                        <p align='justify'>Vehicle retrieval is an important asset for the development of intelligent traffic systems in smart cities. 
+                           In particular, being able to query for vehicles of interest from the pool of large databases is a powerful capability, 
+                           as it brings along a wide array of useful applications in urban planning, traffic engineering, and security maintenance. 
+                           While image-based vehicle retrieval systems have been the more prevalent type of approach, text-based vehicle retrieval systems 
+                           have received noticeably increased attention in research. Unlike image-based retrieval systems which require at least an image of 
+                           the target of interest, text-based ones can leverage easily obtainable natural descriptions of that target. In comparison with image 
+                           queries, while text queries are arguably less effective in terms of describing fine-grained appearances, they are more intuitive, 
+                           user-friendly and can easily provide for more layers of descriptions such as shape, color, position, and relativity to another target.
+                        </p><br>
+                        <p align='justify'>Therefore, to address the difficulties of this Track, we focus on developing 
+                           a robust natural language-based vehicle retrieval system to mainly resolve the domain bias problem due to 
+                           unseen scenarios and multi-view multi-camera vehicle tracks with following contributions:
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/aic22/BASELINE.png" class="float-right"
+                              style="max-width: 65%; text-align: center;" />
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'><b>Efficient pre-processing method</b>: Maximizing the amount of knowledge 
+                                 the model can learn and generalize, hence leveraging for the new domain adaptive training method.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Robust semi-supervised domain adaptive training approach</b>: Addressing the domain bias between the training set and test set 
+                                 for the text-image retrieval model by enforcing the retrieval model to adapt new knowledge from the test set domain.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Context-sensitive post-processing method</b>: Tackling the difference between appearance of different scenarios and multiple camera types and angles lead to
+                                 wrong retrieval results.</p>
+                           </li>
+                        </ul> <br>
+
+                        <p align='justify'>Our proposed approach for retrieval traffic targets from natural descriptions includes a system
+                           sequence of 2 primary modules (<b>Retrieval System (Deep Learning-Driven), Analyzing & Pruning wrong events System (Heuristic-Driven)</b>).
+                        </p>
+
+                        <p align='center'>
+                           <img src="images/thumbs/research/aic22/model-track2.png" class="float-right"
+                              style="max-width: 100%; text-align: center;" />
+                        </p> <br>
+                        <br>
+                        <b><u><i>Domain-Adaptive Baseline Model:</i></u></b>:<br />
+                        <p align='justify'>The baseline model has a big impact on the overall result, therefore selecting pre-trained models with robust 
+                           visual and text representations is crucial. Thus, our baseline model consists of 3 main components: backbone, head, and objective losses.
+                           We propose a SSDA (Semi-Supervised Domain Adaptative) training scheme for CLIP to enforce domain adaptation, overall in 2 stages.
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'>We use famous CLIP from openAI as our main backbone to leverage its powerful knowledge in creating 
+                                 robust representation for both textual and visual data.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'>We consider adopting the dual-stream input to incorporate the information from 
+                                 both type of data into the model. Additionally, Each representation for text and dual-stream image is then fed into independent projection heads 
+                                 with the intention to map each domain space into the space of contrastive representation learning where contrastive losses are applied.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'>we adopt the symmetric Cross-Entropy (InfoNCE) Loss  due to its ability to alleviate the model 
+                                 to learn multi-modal embedding space by jointly training visual and text embedding to maximize the similarity between 
+                                 positive pairs and minimize the rest negative pairs simultaneously.</p>
+                           </li>
+                        </ul>
+                        <p align='justify'>The design of the proposed baseline is not only robust and effective for a
+                           noramal retrieval task but also capable of incoporate different domain knowleage from further domain adaptation technique.
+                        </p> <br>
+
+                        
+
+                        <b><u><i>Achievement:</i></u></b>:<br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/aic22/track2_honor.jpg" class="float-right"
+                              style="max-width: 100%; text-align: center;" />
+                        </p> <br>
+                        <p align='center'>
+                           <img src="images/thumbs/research/aic22/aic22-track2-ranking.png" class="float-right"
+                              style="max-width: 50%; text-align: center;" />
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'>With the accuracy of <b>~0.47</b>, our team achieved a very competitive final score of <b>MRR (Mean Reciprocal Rank) = 0.4773</b> as
+                                 a runner-up, which is a solid top-2 solution only lower than the 1st team from Baidu - China 
+                              </p>
+                           </li>
+                           <li>
+                              <p align='justify'>Our ranking remarked a higher score than other teams from China, Korea,
+                                 Vietnam and the US. </p>
+                           </li>
+                        </ul> <br>
+                        <p align='justify'>Our solution has been internationally recognized in a research paper
+                           published and presented in CVPR 2022, which is a Top-Ranking A* conference:</p>
+                        </p> <br>
+                        <iframe class="map-frame" src="https://www.youtube.com/embed/EqsD02Y5qf8"></iframe>
+
+
+                        <h5>Challenge Track 1: City-Scale Multi-Camera Vehicle Tracking</h5>
+
+
+
+                        <h4>The 5th NVIDIA AI CITY CHALLENGE (2021)</h4>
+                        <h5>Challenge Track 1: Multi-Class Multi-Movement Vehicle Counting Using IoT Devices</h5>
+                        <p align='justify'>In real-world applications, taking into account scaling-up strategies of
+                           practical implementations, the vehicle counting task needs to be carried out on
+                           computationally limited platforms at real-time execution efficiency. As a result, mimicking
+                           in-road hardware sensor-based counting on IoT devices necessitates that vision solution
+                           settings well utilize hardware resources in terms of computations and memory complexities.
+                        </p><br>
+                        <p align='justify'>Hence, we redesigned our previous solution to accomodate practical
+                           requirements:
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/jetson.jpg" class="float-right"
+                              style="max-width: 35%; text-align: center;" />
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'><b>Effectiveness</b>: Utilizing the data-driven framework of Deep
+                                 Learning and supporting algorithms on the complex domain, our approach can perform with
+                                 high accuracy across a number of scenarios.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Efficiency</b>: Satisfying the online, real-time demand of traffic
+                                 surveillance systems, our approach combines light-weighted components with simple
+                                 heuristics to function at high speed on IoT devices.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Scalability</b>: The solution has been much more streamlined, and
+                                 thus much more deployable than its early-release version. It is capable of online,
+                                 real-time performance on an NVIDIA Jetson Xavier NX device.</p>
+                           </li>
+                        </ul> <br>
+
+                        <p align='justify'>Our proposed approach for retrieval traffic behaviors includes a system
+                           sequence of 3 primary modules (<b>Detection, Tracking, Counting</b>) in a multi-threaded
+                           manner, where each is responsible for a specific task: 1) vehicle detection, 2) vehicle
+                           tracking, and 3) path-specific vehicle counting.
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/overview-dl.png" class="float-right"
+                              style="max-width: 100%; text-align: center;" />
+                        </p> <br><br>
+                        <b><u><i>Thread-level parallelism:</i></u></b>:<br />
+                        <ul>
+                           <li>
+                              <p align='justify'>We receive a traffic video containing multiple vehicles of interest and
+                                 preprocess it along with predefined ROIs (regions-of-interest) and MOIs
+                                 (motions-of-interest) settings.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'>We produce a list of detected vehicles via performing batch object
+                                 detection recognize vehicles in view; then we perform our proposed three-fold matching
+                                 scheme for tracking vehicles’ trajectories.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'>We record vehicles of interest that have exitted the field of
+                                 observation based on MOIs configurations that represent real-life paths.</p>
+                           </li>
+                        </ul>
+                        <p align='justify'>The design of the proposed solution is not only robust and effective for a
+                           wide array of scenarios but also capable of making efficient use of available computing
+                           resources.
+                        </p> <br>
+
+                        <b><u><i>Online Directional Multi-Vehicle Tracking:</i></u></b>:<br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/tracking.png" class="float-right"
+                              style="max-width: 100%; text-align: center;" />
+                        </p> <br>
+                        <p align='justify'>A tracking algorithm is one of our major contributions in the proposed
+                           system. It is formulated around a three-fold data association scheme supported by inter-frame
+                           predictions of vehicle positions. Specifically, by leveraging vehicle detections estimated by
+                           the object detector, our algorithm employs the Kalman Filter (KF) to predict vehicles’
+                           positional displacements throughout a scene, thereby enabling effective data association of
+                           each vehicle using the Hungarian Matching algorithm on account of a target’s bounding box
+                           geometry, its directional position with respect to the vehicle’s Kalman Filter state, and its
+                           RGB color histogram.
+                        </p> <br>
+
+                        <b><u><i>Achievement:</i></u></b>:<br />
+                        <p align='center'>
+                           <img src="images/thumbs/research/runnerup.png" class="float-right"
+                              style="max-width: 100%; text-align: center;" />
+                        </p> <br>
+                        <p align='center'>
+                           <img src="images/thumbs/research/ranking.jpg" class="float-right"
+                              style="max-width: 50%; text-align: center;" />
+                        </p>
+                        <ul>
+                           <li>
+                              <p align='justify'>With the speed of <b>~50fps</b> on Jetson NX and an accuracy of
+                                 <b>~0.94</b>, our team achieved a very competitive final score of <b>S1 = 0.9459</b> as
+                                 a runner-up, which is only 0.0008 lower than that of the top team from Baidu - China.
+                              </p>
+                           </li>
+                           <li>
+                              <p align='justify'>Our ranking remarked a higher score than other teams from Korea,
+                                 Vietnam and the US. </p>
+                           </li>
+                        </ul> <br>
+                        <p align='justify'>Our solution has been internationally recognized in a research paper
+                           published and presented in CVPR 2021, which is a Top-Ranking A* conference:</p>
+                        </p> <br>
+                        <iframe class="map-frame" src="https://www.youtube.com/embed/q0GAqSuFDo8"></iframe>
+
+                     </section>
+                  </div>
+               </div>
+            </section>
+            <hr>
+
+            <section id="tssml">
+               <div class="page-header">
+                  <h2>Applied Research: Machine-learning-based Traffic Surveillance System</h2>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <section id="intro">
+                        <h3>Overview</h3>
+                        <p align='justify'>
+                           <b>Smart traffic surveillance system</b> is a system through CCTV to extract necessary
+                           information from which to assist users in regulating
+                           and managing traffic conditions at monitoring points. The intelligent transport system is a
+                           large system consisting of three main parts:
+                        <ul>
+                           <li>
+                              <p align='justify'><b>Image signal processing center</b>: In this module, the system
+                                 receives video signals from CCTV installed at monitoring
+                                 points on the road. Next, the servers analyze the objects from the image to extract the
+                                 necessary information.
+                                 Then, the system gathers the data and prepare for the simulation step. <a><b>This is
+                                       our focus research in the field of computer vision.</b></a></p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Simulation center</b>: This module analyzes based on the information
+                                 provided by the camera signal processing servers
+                                 and simulates the traffic situation on the calculation models. Thereby, the system
+                                 evaluates and makes predictions about
+                                 congestion and traffic jams. Accordingly, the system offers optimal traffic light
+                                 adjustment solutions to reasonably
+                                 coordinate traffic volume at intersections.</p>
+                           </li>
+
+                           <li>
+                              <p align='justify'><b>Traffic operating center</b>: The module plays the role of applying
+                                 and implementing traffic light solutions to the
+                                 real environment.</p>
+                           </li>
+
+                        </ul>
+
+                        <p align='center'></p>
+                        <img src="images/thumbs/research/overview-tss.png" style="text-align: center;" />
+                        </p>
+                        The primary proposal is a vision-based traffic surveillance system that has been
+                        implemented since 2014 on Vo Van Kiet avenue, which was directed by <a><b>Dr. Synh Viet-Uyen
+                              Ha</b></a>
+                        Our proposed work has capability of contextual adaptability including daytime (overcast, shadow,
+                        rainy) and nighttime.
+                        The team leader of this project is <a><b>Mr. Long Hoang Pham</b></a> (M.Eng.).
+                        Our work has been conducted by both current members and previous alumni.<br /><br />
+                        <!-- <img src="images/thumbs/research/camera.gif" class="float-right" style="max-width: 20%;"/> -->
+
+                        In recent years, there has been an increasing interest in the area of traffic
+                        surveillance system (TSS), especially in Vietnam as well as other developing countries.
+                        TSSs are mainly used to provide supports for traffic management systems in urban areas
+                        where the road infrastructures are stressed by the steadily increasing in traffic flow
+                        levels. The resulting high levels of congestion and delay can cause high economic and
+                        environmental costs. The main goal of TSS is to gain an understanding of traffic
+                        situations through extracting information (counts, speed, vehicle type, and density) by
+                        analyzing video (recorded or real-time) from surveillance cameras.<br /><br />
+
+                        So far most studies have only been carried out in developed countries where traffic
+                        infrastructures are built around automobiles, but in Vietnam, motorbikes are dominant
+                        (around 39 million by the end of 2013). Hence, Commercial-Off-The-Shelf TSSs
+                        have failed to cope with the chaotic traffic caused by 2-wheeled motorized vehicles to
+                        provide needed information. Some earlier works have proposed methods to detect and classify
+                        moving
+                        vehicles in urban areas. However, these methods are limited to ideal conditions
+                        (i.e., early morning or cloudy day without the appearance of shadows), and they can only
+                        classify vehicles into two types: 2-wheeled and 4-wheeled.<br /><br />
+                        </p>
+                        <p align='center'></p>
+                        <img src="images/thumbs/research/TSS-ML-resized.jpg" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           Therefore, this work aims to improve the algorithms for vehicle detection, tracking,
+                           and classification to work robustly in daytime scenes. Also, the proposed algorithm will
+                           classify vehicles into three classes: light (motorbikes, bikes, and tricycles), medium
+                           (cars, sedans, and SUVs), and heavy vehicle (trucks and buses). Moreover, the proposed
+                           algorithm will be integrated with other modules to create a unified TSS system as
+                           described in figure above.<br /><br />
+                        </p>
+                        <p align='center'></p>
+                        <img src="images/thumbs/research/tss.png" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+
+                           We implemented a friendly graphical user interface to perform advanced tasks at high level
+                           including
+                           user management, camera organizing, periodical traffic data exporting, result displaying,
+                           etc.
+                        </p>
+                     </section>
+                     <hr />
+                     <section id="scenerecognition">
+                        <h3>Traffic scene recognition </h3>
+                        <p align='justify'>
+                           In proposed framework of TSS, we provide different solutions for each context of traffic
+                           scenes.
+                           First, traffic scenes are categorized into a variety of conditions in which appropriate
+                           methods of vehicle detection and classification
+                           as well as advanced tasks are perform.<br /><br />
+                        </p>
+                        <p align='center'></p>
+                        <img src="images/thumbs/research/SceneRecog.jpg" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           We introduced an approach of traffic scene classification using neural networks.
+                           From the input frame, there are two observations in the camera field-of-view (FOV) containing
+                           the sky part and the road.
+                           For dual sampling regions, consisting of an observation zone and a sky region is applied.
+                           It is a common practice to get the sky region using watershed segmentation in combination
+                           with the horizon line.
+                           The method acquires the region cover most of the sky, because it gets whole characteristic of
+                           the sky, and avoids some small
+                           changes which would make the wrong detection. For example, the raincloud which does not cover
+                           the sun would alter the detection if the sky region is on the cloud.
+                           However, the observation zone authors just cover a part of the road, which is the area the
+                           TSS uses for vehicle detection.
+                           The color intensity of sky is different in the daytime and nighttime, their histogram changes
+                           dramatically from high in the nighttime to low in the nighttime.
+                           From the daily repeat fluctuation, the TSS could accurately recognize the change in
+                           scene.<br /><br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/SceneRecognition.gif" style="text-align: center;" />
+                        </p>
+                        <p align='justify'>
+                           Additionally, authors use the observation zone on the road to identify the condition of the
+                           road.
+                           For more detail, the shadow detection is the technique to distinguish the overcast scene from
+                           the others.
+                           Furthermore, the proposed method uses the features from the observation zone and the sky
+                           region to determine the two-left scene, the rain, and the clear sky.
+                           There are many confused features between the clear sky and the rain.
+                           For example, after the rain, the sky is clear, and the road is wet, which make the reflection
+                           of the vehicle;
+                           Therefore, in this case, the scene is the rain. Later, when the road is dry; the scene is the
+                           clear sky.
+                           This work was implemented by <a><b>Mr. Duong Nguyen-Ngoc Tran</b></a>.
+                        </p>
+                     </section>
+                     <hr />
+                     <section id="bgs">
+                        <h3>Background Subtraction </h3>
+                        <p align='justify'>
+                           In crowded cities, traffic congestion is a serious challenge to any existing modeling
+                           algorithm.
+                           In this context, slow-moving vehicles or high-density pedestrians can cause chaos and damage.
+                           As can be seen in Figure 10, many motorcycles, cars, pedestrians go along the unordered road.
+                           Vehicles can stop waiting for pedestrians to move slowly so that congestion can occur.
+                           Furthermore, the impact of outdoor lighting also affects the background effect.
+                           In general, the input frames affected by such effects are known as framing (or images)
+                           disorders and must be eliminated.<br /><br />
+
+                           <!-- In recent years, most research has focused on enhancing background subtraction model for particular challenges individually, 
+                              but few of works have improved background subtraction holistically. Hence, in complex situations, most techniques use significant 
+                              application-specific tuning to obtain the good result. 
+                              Few algorithms get the proper result in many common scenarios without supervision or preprocessing. 
+                              For a universal background subtraction [25], there are some requirements in the model. 
+                              The first requirement is a suitability of the balance between sensitivity and accuracy based on previous observations and segmentation consistency to reach right decisions. 
+                              The second requirement is that the model should ignore inappropriate changes in input frames, which accords to previously recognized patterns. 
+                              The last requirement is that the model should have a right determinant of way and time for that foreground objects are absorbed in the background model and avoid model corruption when the background is modified. 
+                              To achieve these objectives, it is difficult to the characteristic of most background subtraction approaches that process at the pixel level for better efficiency. 
+                              Additionally, it is not simple to analyze large-scale change patterns and depends on sophisticated algorithms to reach good results.<br/><br/> -->
+
+                           In practice, novel algorithms have a compromise between accuracy and speed performance.
+                           Some methods performed many sophisticated operations to obtain acceptable results that result
+                           in consuming high computing resources,
+                           which becomes a dilemma for any practical system using background subtraction, especially,
+                           TSSs which have to deal with outdoor effects
+                           and resource management. Among proposed methods, GMM is the most widely used method in TSS
+                           because of its capability to tackle dynamic scenes, noise.
+                           However, it can overlap update in case of high-variation motions where other incorrect models
+                           replace the essential background models.<br /><br />
+                        </p>
+                        <div style="width:50%;float: left;">
+                           <img src="images/thumbs/research/image.gif" style="max-width: 100%;" />
+                           <p>Input image</p>
+                        </div>
+                        <div style="width:50%;float: left;">
+                           <img src="images/thumbs/research/foreground.gif" style="max-width: 100%;" />
+                           <p>Extracted foreground<br /><br /></p>
+                        </div>
+                        <div style="width:50%; margin:0 auto;">
+                           <img src="images/thumbs/research/background.gif"
+                              style="text-align: center; max-width: 100%;" />
+                           <p>Modelled background</p>
+                        </div>
+                        <p align='justify'>
+                           In the work, authors proposed a method which solves the dilemma in practice mentioned above,
+                           which not only increase the precision in segmentation but also reduce the time-consuming for
+                           processing.
+                           The authors define two types of the image frame in input sequences: silent frames which are
+                           reliable to update background model, and high variation frames contain a high density of
+                           motion.
+                           The best approach to reduce false update of background model and a wasteful process is to
+                           remove high variation frames from input data.
+                           Approaching to this solution, the authors present a method based on entropy estimation which
+                           determines the complexity of the per-pixel model and a high variation removal method to
+                           manage the update of background model.
+                           This work was implemented by <a><b>Mr. Duong Nguyen-Ngoc Tran</b></a> and <a><b>Dr. Tien
+                                 Phuoc Nguyen</b></a>.<br />
+                        </p>
+                     </section>
+                     <hr />
+                     <section id="daytime-vehicledet">
+                        <h3>Daytime Vehicle Detection </h3>
+                        <p align='justify'>
+                           The proposed system follows the object-based approach for vehicle detection and
+                           tracking. In other words, it is essential to count each vehicle only once and extract
+                           certain measurement features. To ensure that two key considerations: camera mounting
+                           configuration and observation zone, are taken into account when implementing the
+                           vehicle detection algorithm.
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/daytime-vehicle-detection.gif"
+                              style="text-align: center;" /><br />
+                        </p>
+                        <p align='justify'>
+                           The proposed framework can work well under different outdoor conditions including
+                           overcast, rainy, clear-sky, sunny, and crowded scenes with an average accuracy of 89% and a
+                           real-time processing rate of 33.9 frame per second
+                           on an unexceptional configuration of personal computer.
+                           This work was implemented by
+                           <a><b>Mr. Long Hoang Pham</b></a> (overcast, rainy, clear-sky, sunny scenes),
+                           <a><b>Mr. Nhan Thanh Pham</b></a> (rainy scenes),
+                           <a><b>Mr. Hung Ngoc Phan</b></a> (crowded scenes).<br />
+                        </p>
+                     </section>
+                     <hr>
+                     <section id="nighttime-vehicledet">
+                        <h3>Nighttime Vehicle Detection </h3>
+                        <p align='justify'>
+                           The past decade has seen increasingly rapid advances in the field of computer
+                           vision which in turn has led to a renewed interest in traffic surveillance systems
+                           (TSS). Vision-based traffic monitoring systems have the capability to provide
+                           fast and reliable information that is necessary for a wide range of applications
+                           such as traffic management and congestion mitigation. The main objective is to
+                           detect interesting objects (moving vehicles, people, and so on.). Other targets
+                           include classifying objects based on their features and appearance (shape, color,
+                           texture, and area), counting and tracking vehicles (trajectory, motion), assessing
+                           the traffic situation (congestion, accident). While later processes are dependent
+                           on specific application requirements, the initial step of object detection must be
+                           robust and application independent.<br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/nighttime-01.gif"
+                              style="max-width: 47%;margin-right: 3%;" />
+                           <img src="images/thumbs/research/nighttime-02.gif" style="max-width: 47%;" /><br />
+                        </p>
+                        <p align='justify'>
+                           From the literature review, we propose an algorithm to detect and classify
+                           vehicle in nighttime based on observations on real-world data. The novelty of
+                           our work is that headlights are first validated and then paired using trajectory
+                           tracing approach. Our algorithm consists of four steps. First, bright objects are
+                           segmented using the luminance and color variation. Then, the candidate headlights
+                           are detected and validated through the characteristics of headlight such as
+                           area, centroid, rims, and shape. In the next step, we track and pair headlights by
+                           calculating the area ratio, spatial information on common vertical and horizontal
+                           of the headlight. Finally, vehicles are classified into two groups two-wheeled and
+                           four-wheeled. Experiments have shown an effective nighttime vehicle detection
+                           and tracking system for identifying and classifying moving vehicles for traffic
+                           surveillance. This work was implemented by <a><b>Mr. Tuan-Anh Vu</b></a>.<br /><br />
+                        </p>
+                     </section>
+                     <hr>
+
+                     <section id="license-plate">
+                        <h3>Vietnamese license plate recognition </h3>
+                        <p align='justify'>
+                           The goal of license plate location is the spacial detection of an image region
+                           wherein the plate lies. Through license plate detection, which employs a coarse-to-fine
+                           strategy, we aim to reduce the data amount that needs to be processed.<br />
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/license-plate.gif"
+                              style="text-align: center;max-width: 100%;" />
+                        </p>
+                        <p align='justify'>
+                           We have outlined a solution that utilizes a combination of binary
+                           image processing methods (mathematically morphology operations, binary
+                           algorithms), color processing methods (color model transformation, histogram
+                           projection profile) and classifiers. The outlined solution provides a noteworthy
+                           real-time solution to automatically detect license plates in the given video dataset taken
+                           from Trung Luong Road despite the considerable poor image quality, due to low video
+                           quality and the changing outdoor weather. The algorithm processes on average 36
+                           frames per second and can detect plates correctly 88.9% of the time while it can detect
+                           plate characters with 88.1% accuracy. This work was implemented by <a><b>Mr. Duong
+                                 Nguyen-Ngoc Tran</b></a>
+                           and <a><b>Ms. Minh-Thuy Thi Pham</b></a>.<br />
+                        </p>
+                     </section>
+                     <hr>
+
+                     <section id="abandon-object">
+                        <h3>Abandoned Vehicle Detection </h3>
+                        <p align='justify'>
+                           <a>Abandoned Object Detection</a> plays a significant role in many surveillance systems to
+                           extract important information such as abandoned luggage, parking vehicles (counting,
+                           warning).
+                           In this topic, stopped object detection has emerged as an influential field of study. So far,
+                           there has
+                           been a considerable amount of research to accommodate this subject. However, these studies
+                           have
+                           only been detecting stopped objects for a very short period of time and require offline
+                           processing.
+                           Detecting stopped objects in crowded scenes has become a difficult task because of
+                           high-frequency
+                           occlusion between moving persons or vehicles to any considering stopped objects. This issue
+                           is
+                           even more challenging without an initial empty background where removed objects are detected
+                           as stopped objects causing wrong and miss detections. This work presents a method to improve
+                           stopped objects occlusion problems, increase the accuracy of stopped object detection and
+                           maintain stopped objects almost permanently for online processing.<br /><br />
+
+                           One applications of this method is to
+                           <b><a>measure the waiting/congested queue of traffic flow</a></b> (left).
+                           Also, we use this approach to <b><a>detect vehicles that stop or park
+                                 in contravention of regulations</a></b> (right).
+                        </p>
+                        <p align='center'>
+                           <img src="images/thumbs/research/SOD-traffic.gif" style="max-width: 47%;margin-right: 3%;" />
+                           <img src="images/thumbs/research/SOD-traffic2.gif" style="max-width: 47%;" />
+                        </p>
+                        <p align='justify'>
+                           <br />We extended this method to <b><a>detect neglected baggage or dropped luggage.</a></b>.
+                        </p>
+                        <p align='center'>
+                           <!-- <img src="images/thumbs/research/SOD-traffic.gif" style="text-align: center;max-width: 100%;" /> -->
+                           <img src="images/thumbs/research/SOD-traffic3.gif"
+                              style="max-width: 47%;margin-right: 3%;" />
+                           <img src="images/thumbs/research/SOD-traffic4.gif" style="max-width: 47%;" /><br />
+                        </p>
+                        <p align='justify'>
+                           The result outperforms other methods even
+                           in small size detection, occlusion of moving and static objects, background maintenance, wind
+                           jittering. Hence, it shows that the algorithm is very accurate and more if an approximately
+                           good
+                           background is given. If no background is available, the model can be trained for a long
+                           period of
+                           time to retrieve the good background without static objects before further processing or can
+                           be
+                           applied directly with human interaction to achieve the required background. The selective
+                           background model can also be modified in module to further improve the classification method
+                           of
+                           “abandoned and removed” objects. This work was implemented by <a><b>Mr. Nhat-Hoang Tran
+                                 Nguyen</b></a>.<br />
+                        </p>
+                     </section>
+                  </div>
+            </section>
+         </div>
+      </div>
+      <footer id="footer">
+         <div class="container-fluid">
+            <div class="row-fluid">
+               <div class="span5">
+                  <h3>Contact Information</h3>
+                  <p><b>Office Hours: </b>Monday-Saturday (8.30am - 5.30pm)</p>
+                  <p><b>Phone: </b>(+84)-(028)-3724-4270 (Ext: 3433)</p>
+                  <!-- <p><b>Cell: </b>617-981-9247</p> -->
+                  <!-- <p><b>Email: </b><a href="mailto:hcmiu.cvip@gmail.com">hcmiu.cvip@gmail.com</a></p> -->
+                  <a href="mailto:hcmiu.cvip@gmail.com">Email</a>
+               </div>
+               <div class="span2">
+                  <a href="https://hcmiu.edu.vn/"><img src="images/thumbs/Logo-CVIP.png" style="max-width: 60%;" /></a>
+               </div>
+               <div class="span5">
+                  <h3>Address</h3>
+                  <p>Computer Vision and Image Processing Laboratory<br>
+                     -----------<br>
+                     International University - Vietnam National University HCMC<br>
+                     School of Computer Science and Engineering<br>
+                     Quarter 6, Linh Trung Ward, Thu Duc District<br>
+                     Ho Chi Minh 700000, Vietnam<br>
+                     Block A1, Room 611<br>
+                  </p>
+                  <a href="https://goo.gl/maps/eX4gipJAkzcoCzP16">Show Map</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- /container -->
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function () {
+            $(document.body).scrollspy({
+               target: "#navparent"
+            });
+         });
+
+      </script>
+      <script>
+         function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+               x.className += " responsive";
+            } else {
+               x.className = "topnav";
+            }
+         }
+      </script>
+</body>
+
+</html>

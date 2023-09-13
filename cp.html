@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+
+<head>
+      <meta charset="utf-8">
+      <title>HCMIU CVIP Lab - Competitive Programming</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="CVIP">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+         body {
+           margin: 0;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+   
+        .topnav {
+           overflow: hidden;
+           background-color: #333;
+        }
+   
+        .topnav a {
+           float: left;
+           display: block;
+           color: #f2f2f2;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+           font-size: 17px;
+        }
+   
+        .topnav a:hover {
+           background-color: #ddd;
+           color: black;
+        }
+   
+        .topnav a.active {
+           background-color: #4CAF50;
+           color: white;
+        }
+   
+        .topnav .icon {
+           display: none;
+        }
+   
+        @media screen and (max-width: 600px) {
+           .topnav a:not(:first-child) {display: none;}
+           .topnav a.icon {
+             float: right;
+             display: block;
+          }
+       }
+   
+       @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+       }
+       .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+       }
+    }
+   </style>
+   </head>
+   <body>
+      <div class="container">
+         <header  id="overview">
+            <!-- <p class="lead"> International University - Vietnam National University HCM City </p>
+            <h1>Computer Vision and Image Processing Laboratory</h1> -->
+            <img src="images/thumbs/cvip-header.jpg">
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <div class="topnav" id="myTopnav">
+                       <a href="index.html" >Home</a>
+                       <a href="people.html">People</a>
+                       <a href="research.html" >Research</a>
+                       <a class="active">Competitive Programming</a>
+                       <a href="publications.html">Publications</a>
+                       <a href="education.html">Teaching</a>
+                       <a href="contact.html">Contact</a>
+                       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                         <i class="fa fa-bars"></i>
+                      </a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+         <hr>
+         <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#visionmission"> Vision and Mission </a></li>
+                  <li><a href="#activities"> Activities </a></li>
+                  <li><a href="#achievement"> Achievements </a></li>
+                     <li><a class="subhead" href="#icpc"> International Collegiate Programming Contest (ICPC) </a></li>
+                     <li><a class="subhead" href="#vnoi"> Olympiad in Informatics for Vietnamese Students (VNOI)</a></li>
+                  <li><a href="#gallery"> Gallery </a></li>
+               </ul>
+            </div>
+            <div class="span8 offset1">
+               <img src="images/thumbs/cp/new.gif"/> Our achievements have been updated <a href="#achievement"><b>here</b></a> !!
+               <hr>
+               <section id="visionmission">
+                  <div class="page-header">
+                     <h2>Vision and Mission</h2>
+                     <hr>
+                     <p align="justify">
+                        <b><a>Competitive programming</a></b> is a mind sport usually held over the Internet or a local network, involving participants trying to program 
+                        according to provided specifications. Contestants are referred to as sport programmers. 
+                        This kind of programming competition generally involves the host presenting a set of logical or mathematical problems, also known as puzzles, 
+                        to the contestants (who can vary in number from tens to several thousands), and contestants are required to write computer programs 
+                        capable of solving each problem. Judging is based mostly upon number of problems solved and time spent for writing successful solutions, 
+                        but may also include other factors (quality of output produced, execution time, program size, resource usage, etc.).
+                        <a href="https://en.wikipedia.org/wiki/Competitive_programming">[Wikipedia]</a><br/><br/>
+
+                        Beside research activities, since 2012, our lab has kept organizing and training a group of self-motivated students who are a big fan of algorithmic programming.
+                        Our purpose is to create a prestigious academic environment for students who aim to solve challenging problems in the 
+                        <a href="http://www.olp.vn/">National Olympiad in Informatics for Vietnamese Students</a> 
+                        and <a href="https://icpc.global/">the International Collegiate Programming Contest (ICPC)</a>. More importantly, 
+                        our vision is to encourage students to learn, to research in scientific problems, and to empower teamwork in collaborative and integrated environments.<br/><br/>
+
+                        Our mission is to train and fosters students with background knowledge in an intermediate level of computer science including algorithms, 
+                        data structures, mathematics in computing, and programming.<br/><br/>
+
+                        <img src="images/thumbs/people/nxtung.JPG" class="float-right" style="max-width: 27%;"/>
+                        The representative member in our Olympiad team is <a><b>Mr. Tung Xuan Nguyen</b></a> 
+                        <a href="https://codeforces.com/profile/neko_nyaaaaaaaaaaaaaaaaa"><b style='color:red !important;'>[Codeforces Grandmaster]</b></a>. 
+                        He is a highly self-motivated contestant of competitive programming with strong background of algorithms and excellent coding skill.
+                        He is the first person in our lab who won prizes in all of three divisions 
+                        (<b>Super Cup</b>, <b>Informatics Specialization</b>, and <b>Non-Informatics Specialization</b>) 
+                        of <b><a href="http://www.olp.vn/">National Olympiad in Informatics for Vietnamese Students</a></b>.
+                        Taking on programming as a gifted student in Biology at the beginning of the first year (2017), 
+                        he won the initial prize in this kind of challenge after round 01 year.
+                        With ceaseless efforts, he levelled up to 
+                        <a href="https://codeforces.com/profile/neko_nyaaaaaaaaaaaaaaaaa"><b style='color:red !important;'>Grandmaster</b></a>
+                        on <b><a>Codeforces</a></b> after around 2.5 years. 
+
+                        <blockquote >
+                           "Enjoying your work is essential. If your work becomes an expression of your own ideas, you will surely enjoy it."
+                           - <b>Soichiro Honda</b>
+                        </blockquote>
+                     </p>
+                  </div>
+               </section>            
+               <section id="activities">                  
+                  <div class="page-header">
+                     <h2>Activities</h2>
+                     <hr>
+                     <p align="justify">
+                        Our training is arranged in weekly schedule, including theoretical lectures and contest-driven practice.
+                        We have been hosting our self-organized online judges for our students to work on algorithmic problems more conveniently.
+                        Our internal training server includes: <br/>
+                     </p>
+                     <p align="center">         
+                        <b><a href="https://codeforces.com/group/EWExxsEhmh/contests">Codeforces</a></b><br/>
+                        <img src="images/thumbs/cp/codeforces.gif"/><br><br/>
+
+                        <b><a href="http://hcmiucvip.com/domjudge/">DOMjudge </a></b><br/>
+                        <img src="images/thumbs/cp/domjudge.gif"/><br/>
+
+                        <b><a href="http://hcmiucvip.com/cms/">Contest Management System (CMS)</a></b><br/>
+                        <img src="images/thumbs/cp/cms.gif" /><br/>
+
+                        <b><a href="https://vjudge.net/group/hcmiu-olympiad">Virtual Judge (Vjudge)</a></b><br/>
+                        <img src="images/thumbs/cp/vjudge.png" />
+                     </p>
+                     <p align="justify">
+                        We also recommend contestants to practice more on external judges, including:<br/>
+                     </p>
+                     <p align="center"> 
+                        <a href="http://codeforces.com/?mobile=false"><img src="images/thumbs/cp/codeforces.png" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://www.codechef.com/"><img src="images/thumbs/cp/codechef.png" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://onlinejudge.org/"><img src="images/thumbs/cp/uva.png" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://vn.spoj.com/"><img src="images/thumbs/cp/spoj.jpeg" style="max-width: 20%;"/></a><br/><br/>
+
+                        <a href="https://icpcarchive.ecs.baylor.edu/"><img src="images/thumbs/cp/icpc.png" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://www.topcoder.com/tc?module=ProblemArchive"><img src="images/thumbs/cp/topcoder.jpg" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://www.hackerearth.com/"><img src="images/thumbs/cp/hackerearth.jpg" style="max-width: 20%;margin-right: 20px;"/></a>
+                        <a href="https://www.hackerrank.com/"><img src="images/thumbs/cp/hackerrank.jpg" style="max-width: 20%;"/></a>
+                     </p>
+                     
+                  </div>
+               </section>        
+               <section id="achievement">                  
+                  <div class="page-header">
+                     <h2>Achievements</h2>
+                     <p align="justify">
+                        The 13-year journey of conquering the <a href="http://www.olp.vn/">National Olympiad in Informatics for Vietnamese Students</a> and 
+                        <a href="https://icpc.global/">the International Collegiate Programming Contest (ICPC)</a> is not a long time, 
+                        but it is enough for us to look back on the achievements after a long lasting and challenging adventure but full of joy.
+                     </p>
+                     
+                     <hr>
+                     <section id="icpc"> 
+                        <h3>International Collegiate Programming Contest (ICPC)</h3>
+                        <p align="justify">
+                           <img src="images/thumbs/cp/icpc-logo.png" class="float-right" style="max-width: 30%;"/>
+                           <b><a href="https://icpc.global/">The International Collegiate Programming Contest (ICPC)</a></b> 
+                           is an algorithmic programming contest for college students. Headquartered at <a href="https://www.baylor.edu/">Baylor University</a>, 
+                           directed by ICPC Executive Director and <a href="https://icpc.global/about/bill-poucher/">Baylor Professor Dr. William B. Poucher</a>, the ICPC operates 
+                           autonomous regional contests covering six continents culminating in a global World Finals every year.                            
+                           Teams of three, representing their university, 
+                           work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability 
+                           to perform under pressure. Through training and competition, teams challenge each other to raise the bar on 
+                           the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world.<br/><br/>                           
+                           
+                           <img src="images/thumbs/cp/icpc-rounds.png" class="float-right" style="max-width: 38%;"/>
+                           The contest fosters creativity, teamwork, and innovation in building new software programs, and enables students to 
+                           test their ability to perform under pressure. The contest has raised aspirations and performance of generations of 
+                           the world’s problem solvers in the computing sciences and engineering. The ICPC features several levels of competition:
+                           Local/Provincial Contests, National Contests, Continent Regional Championships, and The World Finals. All of rounds are annually
+                           organized and hosted different provinces, countries, regions, and universities year-by-year.
+                           Tracing its roots to 1970, over 320,000 ICPC alumni populate the professional ranks of high-tech companies, consulting firms, 
+                           financial institutions, investment firms, high-tech startups, venture-capital firms, academia, and public service. 
+                           ICPC Alumni are developers, software engineers, senior software engineers, leads, chiefs, CTOs, CEOs, founders, and co-founders. 
+                           They are also professors, researchers, and in public service. 
+                        </p>              
+                        <p align='center'>
+                           
+                        </p>
+                        <!-- <ul>
+                           <li><p align='justify'>Local/Provincial Contests</p></li>
+
+                           <li><p align='justify'>National Contests</p></li>
+
+                           <li><p align='justify'>Continent Regional Championships</p></li>       
+
+                           <li><p align='justify'>The World Finals</p></li>                    
+                        </ul>                         -->
+                        <p align="justify">
+                           We won a number of honorable achievements after a long and challenging journey with ICPC:
+                        </p>
+                        <ul>
+                           <!-- <li><p align='justify'>The World Finals</p></li>     -->
+                           <li><p align='justify'><b>Asia Pacific Regional Round</b> (sites in Vietnam)</p></li>  
+                           <ul>
+                              <li><p align="justify">
+                                 <a><b>Gold Medal</b></a> at The 2021 ICPC Asia Hanoi Regional Contest<br/>
+                                 Team <b>HCMIU_ThinkingTourists</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Duc Luu Trung</a> + 
+                                    <a>Mr. Dinh Lam Quoc</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Gold Medal</b></a> at The 2020 ICPC Asia Can Tho Regional Contest<br/>
+                                 Team <b>HCMIU_PerfectlyBalanced</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Vinh-Quang Qui Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Bronze Medal</b></a> and <a><b>First Prize of Domestic Teams</b></a> at The 2019 ICPC Asia Da Nang Regional Contest<br/>
+                                 Team <b>HCMIU_MoralCompass</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Cuong Tien Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Second Prize of Domestic Teams</b></a> at The 2018 ICPC Asia Southeast and Pacific Ha Noi Regional Contest<br/>
+                                 Team <b>HCMIU</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Tin Trung Thai</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Honorable Mention</b></a> at The 2017 ICPC Asia Hochiminh Regional Contest<br/>
+                                 Team <b>HCMIU#2</b> = 
+                                    <a>Mr. Thanh-Duy Le Vo</a> + 
+                                    <a>Mr. Duy Phuong Phan</a> + 
+                                    <a>Mr. Quang Duy Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                           </ul>                
+                        </ul>
+                        <div id="myCarousel" class="carousel slide">
+                           <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                              <li data-target="#myCarousel" data-slide-to="4"></li>
+                           </ol>
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                 <img src="images/thumbs/cp/award/gold-2021.jpg" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/gold-2020.png" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/bronze-2019.png" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/2nd-prize-asia-2018.jpg" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/gold-2020-2.jpg" class="carousel-image" alt="">
+                              </div>
+                           </div>
+                           <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                           <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                        </div>
+
+                        <ul>
+                           <li><b><p align='justify'>Vietnam National Round</p></b></li>
+                           <ul>
+                              <li><p align="justify">
+                                 <a><b>First Prize</b></a> at The 2021 ICPC Vietnam National Contest<br/>
+                                 Team <b>HCMIU_ThinkingTourists</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Duc Luu Trung</a> + 
+                                    <a>Mr. Dinh Lam Quoc</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>First Prize</b></a> at The 2018 ICPC Vietnam National Contest<br/>
+                                 Team <b>HCMIU</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Tin Trung Thai</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Second Prize</b></a> at The 2019 ICPC Vietnam National Contest<br/>
+                                 Team <b>HCMIU_MoralCompass</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Cuong Tien Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Third Prize</b></a> at The 2020 ICPC Vietnam National Contest<br/>
+                                 Team <b>HCMIU_PerfectlyBalanced</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Vinh-Quang Qui Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                           </ul>                 
+                        </ul>
+                        <div id="myCarousel1" class="carousel slide">
+                           <ol class="carousel-indicators">
+                              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel1" data-slide-to="1"></li>
+                              <li data-target="#myCarousel1" data-slide-to="2"></li>
+                           </ol>
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                 <img src="images/thumbs/cp/award/first-national-2021.jpg" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/first-national-2018.jpg" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/second-national-2019.png" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/third-national-2020.png" class="carousel-image" alt="">
+                              </div>
+                           </div>
+                           <a class="left carousel-control" href="#myCarousel1" data-slide="prev">‹</a>
+                           <a class="right carousel-control" href="#myCarousel1" data-slide="next">›</a>
+                        </div>
+
+                        <ul>              
+                           <li><b><p align='justify'>Vietnam Southern Provincial Round</p></b></li>
+                           <ul>
+                              <li><p align="justify">
+                                 <a><b>First Prize</b></a> at The 2020 ICPC Vietnam Southern Provincial Contest<br/>
+                                 Team <b>HCMIU_ThinkingTourists</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Vinh-Quang Qui Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Second Prize</b></a> at The 2021 ICPC Vietnam Southern Provincial Contest<br/>
+                                 Team <b>HCMIU_PerfectlyBalanced</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Duc Luu Trung</a> + 
+                                    <a>Mr. Dinh Lam Quoc</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Third Prize</b></a> at The 2019 ICPC Vietnam Southern Provincial Contest<br/>
+                                 Team <b>HCMIU_MoralCompass</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Cuong Tien Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Honorable Mention</b></a> at The 2018 ICPC Vietnam Southern Provincial Contest<br/>
+                                 Team <b>HCMIU</b> = 
+                                    <a>Mr. Tung Xuan Nguyen</a> + 
+                                    <a>Mr. Nhat Minh Chung</a> + 
+                                    <a>Mr. Tin Trung Thai</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)
+                              </p></li>
+                              <li><p align="justify">
+                                 <a><b>Honorable Mention</b></a> at The 2017 ICPC Vietnam Southern Provincial Contest<br/>
+                                 Team <b>HCMIU#1</b> = 
+                                    <a>Mr. Nhat-Hoang Tran Nguyen</a> + 
+                                    <a>Mr. Tin Trung Thai</a> + 
+                                    <a>Mr. Phat Tan Vo</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)<br/>
+                                 Team <b>HCMIU#2</b> = 
+                                    <a>Mr. Thanh-Duy Le Vo</a> + 
+                                    <a>Mr. Duy Phuong Phan</a> + 
+                                    <a>Mr. Quang Duy Nguyen</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)<br/>
+                                 Team <b>HCMIU#3</b> = 
+                                    <a>Mr. Nhan Trong Doan</a> + 
+                                    <a>Mr. Tuan-Ngoc Thien Nguyen</a> + 
+                                    <a>Mr. Thanh-Tung Ba To</a> +
+                                    <a>Dr. Synh Viet-Uyen Ha</a> (Coach)<br/>
+                              </p></li>
+                           </ul>                
+                        </ul>   
+                        
+                        <div id="myCarousel2" class="carousel slide">
+                           <ol class="carousel-indicators">
+                              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel2" data-slide-to="1"></li>
+                           </ol>
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                 <img src="images/thumbs/cp/award/second-southern-2021.jpg" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/first-southern-2020.png" class="carousel-image" alt="">
+                              </div>
+                              <div class="item">
+                                 <img src="images/thumbs/cp/award/third-southern-2019.png" class="carousel-image" alt="">
+                              </div>
+                           </div>
+                           <a class="left carousel-control" href="#myCarousel2" data-slide="prev">‹</a>
+                           <a class="right carousel-control" href="#myCarousel2" data-slide="next">›</a>
+                        </div>    
+                        <p align="justify">
+                           All of the above achievements are the result of the ceaseless efforts of the entire team in a long-term training and coaching, 
+                           continuing to affirm the position and quality of HCMIU CVIP's students through national and international programming-related competitions.
+                        </p>
+    
+                     </section>
+
+                     <hr>
+                     <section id="vnoi"> 
+                        <h3>National Olympiad in Informatics for Vietnamese Students</h3>
+                        <p align="justify">
+                           <img src="images/thumbs/cp/olp.jpg" class="float-right" style="max-width: 15%;"/>
+                           <b><a href="http://www.olp.vn/">National Olympiad in Informatics for Vietnamese Students</a></b> is an initiative of the <a href="http://vaip.org.vn/">Vietnam Association for Information Processing (VAIP)</a>, 
+                           <a href="https://moet.gov.vn/">the Vietnamese Ministry of Education and Training</a>, and <a href="http://hoisinhvien.com.vn/">the Vietnamese Students' Association</a> to motivate the learning movement and to encourage young talents in computer science. 
+                           Starting in 1992, the competition was held annually with the participation of a large number of students from universities and colleges throughout the country.<br/><br/>
+                           
+                           The scale and scope of the competition expanded under the general regulations of the Government and sponsored by Ministry of Education and Training, 
+                           Ministry of Information and Communication and the Ministry of Science and Technology, 
+                           Union of Science and Technology Art of Vietnam, the Central Committee of the Ho Chi Minh 
+                           Communist Youth Union, the People's Committee of the hosting province or city.<br/><br/>
+
+                           In the competition, all the contests are arranged as individual participation of contestants. 
+                           Our lab focuses on three primary divisions:
+                        </p>
+                        <ul>
+                           <li><p align='justify'><b>Super Cup</b>: an independent competition, where all contestant can participate in, regardless of whether students are specialized 
+                              in Informatics or not, and also regardless of whether they had won official domestic and international prizes in Olympiad in Informatics or not.
+                              Each university, institute or colleges is allowed to set up a Super Cup team with a maximum of 05 students who are studying at that educational unit).
+                              Contestants who have won the official third prize or higher in the national and international competitions in informatics for high school students 
+                              or in the previous National Olympiad in Informatics for Vietnamese Students are only allowed to take on Super Cup division.</p></li>
+
+                           <li><p align='justify'><b>Informatics Specialization</b>: This division is hold for students who are pursuing Informatics-related majors. 
+                              First year students, who are in Informatics-related majors, are not compulsory to register for this division. 
+                              </p></li>
+
+                           <li><p align='justify'><b>Non-Informatics Specialization</b>: This division is only hold for students who are pursuing disciplines other than 
+                              Informatics-related majors.</p></li>                        
+                        </ul>
+                        <p align="justify">
+                           During last 11 years (from 2012 to 2022), under the supervision of <b><a>Dr. Ha Viet Uyen Synh</a></b>, 
+                           we received a number of achievements in National Olympiad in Informatics for Vietnamese Students. In summary, we honorably presented following 
+                           encouraging results:
+                        </p>    
+                        
+                        <ul>
+                           <!-- <li><p align='justify'>The World Finals</p></li>     -->
+                           <li><p align='justify'><b>Super Cup division</b>: <b>01 First Prize (Silver Trophy)</b>  <b>01 Third Prize</b> achieved by <a ><b>Mr. Tung Xuan Nguyen.</b></a></p></li>
+                           <li><p align='justify'><b>Informatics Specialization division</b>: members of our lab won</p></li>
+                              <ul><li>
+                                 <a><b>02 First Prizes</b></a>, 
+                                 <a><b>05 Second Prizes</b></a>, 
+                                 <a><b>05 Third Prizes</b></a>, 
+                                 and <a><b>10 Honorable Mentions</b></a>
+                              </li></ul>                
+                           <li><p align='justify'><b>Non-Informatics Specialization division</b>: our team got</p></li>
+                              <ul><li>
+                                 <a><b>01 First Prize</b></a>, 
+                                 <a><b>01 Second Prize</b></a>, 
+                                 <a><b>03 Third Prizes</b></a>, 
+                                 and <a><b>01 Honorable Mentions</b></a>
+                              </li></ul>                
+                        </ul>                          
+                        <p align='center'></p> 
+                           <img src="images/thumbs/cp/prizes.png" style="text-align: center;"/>
+                        </p>
+                        <p align="justify">
+                           All of the above achievements are the result of the ceaseless efforts of the entire team in a long-term training and coaching, 
+                           continuing to affirm the position and quality of HCMIU CVIP's students through national and international programming-related competitions.
+                        </p>
+                    
+
+                        <b>Full list of prizes from our lab in National Olympiad in Informatics for Vietnamese Students:</b> 
+                        <!-- <button onclick="myFunctionX()" id="vnoiButton">Show</button> -->
+                        <!-- <div id="myDIV" style="display: none;"> -->
+                        <!-- <div id="myDIV" style="display: block;"> -->
+                           <!-- <br/> -->
+                           <p>
+                           <ul>
+                              <li><a><b>Super Cup division</b></a></li>
+                              <ul>
+                                 <li><p align="justify"><b>First Prize (Silver Trophy)</b>: 
+                                    <a>Tung Xuan Nguyen</a> (2021)
+                                 </p></li>
+                                 <li><p align="justify"><b>Third Prize</b>: 
+                                    <a>Tung Xuan Nguyen</a> (2020)
+                                 </p></li>
+                              </ul>
+                              
+                              <li><a><b>Informatics Specialization division</b></a></li>
+                              <ul>
+                                 <li><p align="justify"><b>First Prize</b>: 
+                                    <a>Tung Xuan Nguyen</a> (2018), 
+                                    <a>Tin Trung Duong</a> (2013)
+                                 </p></li>
+                                 <li><p align="justify"><b>Second Prize</b>: 
+                                    <a>Duc Trung Luu</a> (2021), 
+                                    <a>Vinh-Quang Qui Nguyen</a> (2020), 
+                                    <a>Nhat Minh Chung</a> (2018), 
+                                    <a>Cuong Tien Nguyen</a> (2017),
+                                    <a>Hung Huy Nguyen</a> (2012)
+                                 </p></li>
+                                 <li><p align="justify"><b>Third Prize</b>: 
+                                    <a>Tin Trung Thai</a> (2018),
+                                    <a>Nhat-Hoang Tran Nguyen</a> (2017), 
+                                    <a>Thanh-Duy Vo Le</a> (2017),
+                                    <a>Hung Ngoc Phan</a> (2016), 
+                                    <a>Long Hoang Pham</a> (2013)
+                                 </p></li>
+                                 <li><p align="justify"><b>Honorable Mention</b>: 
+                                    <a>Dinh Lam Quoc</a> (2021),
+                                    <a>Huy Dinh-Anh Le</a> (2021),
+                                    <a>Nguyen Le Nguyen</a> (2019),
+                                    <a>Quang Kim Cap</a> (2019),
+                                    <a>Hung Ngoc Phan</a> (2015), 
+                                    <a>Tien Phuoc Nguyen</a> (2014),
+                                    <a>Phuong-Tai Huu Tran</a> (2014),
+                                    <a>Duong Nguyen-Ngoc Tran</a> (2013),
+                                    <a>Long Hoang Pham</a> (2012),
+                                    <a>Tin Trung Duong</a> (2012)
+                                 </p></li>
+                              </ul>
+                              
+                              <li><a><b>Non-Informatics Specialization division</b></a></li>
+                              <ul>
+                                 <li><p align="justify"><b>First Prize</b>: 
+                                    <a>Duc Trung Luu</a> (2020)
+                                 </p></li>
+                                 <li><p align="justify"><b>Second Prize</b>: 
+                                    <a>Sang The Bui</a> (2019)
+                                 </p></li>
+                                 <li><p align="justify"><b>Third Prize</b>: 
+                                    <a>Dinh Quoc Lam</a> (2020), 
+                                    <a>Tung Xuan Nguyen</a> (2017), 
+                                    <a>Dat Tat Tran</a> (2014)
+                                 </p></li>
+                                 <li><p align="justify"><b>Honorable Mention</b>: 
+                                    <a>Huy Dinh-Anh Le</a> (2020)
+                                 </p></li>
+                              </ul>
+                           </ul>
+                           </p>
+                        <!-- </div> -->
+                        <hr/>
+                        <h3 id="gallery">Our memories with competitive programming:</h3> 
+                        <button onclick="myFunctionX()" id="vnoiButton">Show</button>
+                        <div id="myDIV" style="display: none;">
+                        <!-- <div id="myDIV" style="display: block;"> -->
+                           <h4>Our team in OLP-ICPC 2021 at Ha Noi</h4>
+                           <div id="myCarousel2021" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2021/6.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/scoreboard.png" class="carousel-image" alt="Scoreboard">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/3.jpg" class="carousel-image" alt="HCMIU_ThinkingTourists">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/2.jpg" class="carousel-image" alt="Mr. Nguyen Xuan Tung - Silver Trophy">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/4.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2021/5.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2021" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2021" data-slide="next">›</a>
+                           </div>  
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2020</h4>
+                           <div id="myCarousel2020" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2020/2020.png" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/scoreboard.png" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-5.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-6.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-8.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-9.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-10.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-11.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-12.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2020/2020-13.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2020" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2020" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2019</h4>
+                           <div id="myCarousel19" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2019/2019.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2019/2019-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2019/2019-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel19" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel19" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2018</h4>
+                           <div id="myCarousel2018" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2018/2018.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-0.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-5.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-6.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-7.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2018/2018-8.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2018" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2018" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2017</h4>
+                           <div id="myCarousel2017" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2017/2017.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-4.JPG" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-5.JPG" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2017/2017-6.JPG" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2017" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2017" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2016</h4>
+                           <div id="myCarousel2016" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2016/2016.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-5.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-6.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-7.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2016/2016-8.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2016" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2016" data-slide="next">›</a>
+                           </div>  
+
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2015</h4>
+                           <a><p align="justify"><b>&#128531; We missed our photos in this year &#128531;</b></p></a>
+
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2014</h4>
+                           <div id="myCarousel2014" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2014/2014.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2014/2014-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2014/2014-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2014/2014-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2014/2014-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2014" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2014" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2013</h4>
+                           <div id="myCarousel2013" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2013/2013.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2013/2013-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2013/2013-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2013/2013-3.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2013/2013-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2013" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2013" data-slide="next">›</a>
+                           </div>  
+                           
+                           <br/>
+                           <h4>Our team in OLP-ICPC 2012</h4>
+                           <div id="myCarousel2012" class="carousel slide">
+                              <div class="carousel-inner">
+                                 <div class="item active">
+                                    <img src="images/images/cp-team/2012/2012.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-1.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-2.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-4.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-5.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-6.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-7.jpg" class="carousel-image" alt="">
+                                 </div>
+                                 <div class="item">
+                                    <img src="images/images/cp-team/2012/2012-8.jpg" class="carousel-image" alt="">
+                                 </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel2012" data-slide="prev">‹</a>
+                              <a class="right carousel-control" href="#myCarousel2012" data-slide="next">›</a>
+                           </div>  
+                        </div> 
+                     </section>
+                  </div>
+               </section>
+               <!-- <hr/> -->
+            </div>
+         </div>
+      <footer id="footer">
+         <div class="container-fluid">
+            <div class="row-fluid">
+               <div class="span5">
+                  <h3>Contact Information</h3>
+                  <p><b>Office Hours: </b>Monday-Saturday (8.30am - 5.30pm)</p>
+                  <p><b>Phone: </b>(+84)-(028)-3724-4270 (Ext: 3433)</p>
+                  <!-- <p><b>Cell: </b>617-981-9247</p> -->
+                  <!-- <p><b>Email: </b><a href="mailto:hcmiu.cvip@gmail.com">hcmiu.cvip@gmail.com</a></p> -->
+                  <a href="mailto:hcmiu.cvip@gmail.com">Email</a>
+               </div>
+               <div class="span2">
+                  <a href="https://hcmiu.edu.vn/"><img src = "images/thumbs/Logo-CVIP.png" style="max-width: 60%;"/></a>
+               </div>
+               <div class="span5">
+                  <h3>Address</h3>
+                  <p>Computer Vision and Image Processing Laboratory<br>
+                     -----------<br>
+                     International University - Vietnam National University HCMC<br>
+                     School of Computer Science and Engineering<br>
+                     Quarter 6, Linh Trung Ward, Thu Duc District<br>
+                     Ho Chi Minh 700000, Vietnam<br>
+                     Block A1, Room 611<br>
+                  </p>
+                  <a href="https://goo.gl/maps/eX4gipJAkzcoCzP16">Show Map</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- /container -->
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+         
+      </script>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+       </script>
+       <script>
+          function myFunctionX() {
+            var x = document.getElementById("myDIV");
+            var buttonText = document.getElementById("vnoiButton");
+            if (x.style.display === "none") {
+               x.style.display = "block";
+               buttonText.innerHTML = "Hide";
+            } else {
+               x.style.display = "none";
+               buttonText.innerHTML = "Show";
+            }
+         }
+       </script>
+   </body>
+</html>

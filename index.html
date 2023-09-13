@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>HCMIU CVIP Lab - Home</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Nikola Miljkovic">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+   <link href="css/theme.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+     .topnav {
+        overflow: hidden;
+        background-color: #333;
+     }
+
+     .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+     }
+
+     .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+     }
+
+     .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+     }
+
+     .topnav .icon {
+        display: none;
+     }
+
+     @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+       }
+    }
+
+    @media screen and (max-width: 600px) {
+     .topnav.responsive {position: relative;}
+     .topnav.responsive .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+    }
+    .topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+    }
+ }
+</style>
+
+</head>
+<body>
+   <div class="container">
+      <header  id="overview">
+         <!-- <p class="lead"> International University - Vietnam National University HCM City </p>
+         <h1>Computer Vision and Image Processing Laboratory</h1> -->
+         <img src="images/thumbs/cvip-header.jpg">
+      </header>
+      <div class="masthead">
+         <div class="navbar">
+            <div class="navbar-inner">
+               <div class="container">
+                  <div class="topnav" id="myTopnav">
+                    <a class="active">Home</a>
+                    <a href="people.html">People</a>
+                    <a href="research.html">Research</a>
+                    <a href="cp.html">Competitive Programming</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="education.html">Teaching</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                   </a>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+         <div id="myCarousel" class="carousel slide">
+            <!-- <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+               <li data-target="#myCarousel" data-slide-to="4"></li>
+               <li data-target="#myCarousel" data-slide-to="5"></li>
+               <li data-target="#myCarousel" data-slide-to="6"></li>
+               <li data-target="#myCarousel" data-slide-to="7"></li>
+               <li data-target="#myCarousel" data-slide-to="8"></li>
+               <li data-target="#myCarousel" data-slide-to="9"></li>
+               <li data-target="#myCarousel" data-slide-to="10"></li>
+            </ol> -->
+            <div class="carousel-inner">
+               <!-- <div class="item active"> -->
+                  <img src="images/images/cover.gif" class="carousel-image" alt="">
+                  <!-- <div class="carousel-caption">
+                     <h4>Welcome to Computer Vision and Image Processing Laboratory (HCMIU CVIP)</h4>
+                     <p></p>
+                  </div> -->
+               <!-- </div> -->
+               <!-- <div class="item active">
+                  <img src="images/images/CVIP_Group_02.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Welcome to Computer Vision and Image Processing Laboratory (HCMIU CVIP)</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_01.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Welcome to Computer Vision and Image Processing Laboratory (HCMIU CVIP)</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_03.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2012</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_04.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2013</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_05.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2014</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_06.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2016</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_07.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2017</h4>
+                     <p></p>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/images/CVIP_Group_08.jpg" class="carousel-image" alt="">
+                  <div class="carousel-caption">
+                     <h4>Our team at ACM-ICPC Asia Regional 2018</h4>
+                     <p></p>
+                  </div>
+               </div> -->
+               
+               
+            </div>
+            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a> -->
+            <!-- <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> -->
+         </div>
+      </div>
+   </div>
+   <hr>
+   <div class="container-fluid">
+    <div class="row-fluid marketing"> 
+      <div class="row-fluid">
+         <div class="span12">
+            <p align="justify">The Computer Vision and Image Processing Laboratory was established in 2012 and has been directed by <a href="https://it.hcmiu.edu.vn/user/hvusynh/">Dr. Ha Viet Uyen Synh</a>. 
+               Our group mainly focus on developing algorithms to replicate the abilities of human vision by electronically perceiving and understanding images or video. 
+               In general, we analyze and process high-dimensional data from the real world in order to produce numerical or symbolic information, e.g., in the forms of decisions. 
+               Our work aims to release vision-based solutions for surveillance systems using static cameras. 
+               Specific topics we are interested in and researching currently are: Computer and Machine Vision, Image Processing, Motion Estimation, Optical Flow, Occlusion Detection, 
+               Applications of Machine Learning and Deep Learning in these topics.<br/><br/>
+               Beside research activities, our lab has kept organizing and training a group of self-motivated students who are a big fan of algorithmic programming.
+               Our purpose is to create a prestigious academic environment for students who aim to solve challenging problems in the 
+               <a href="http://www.olp.vn/">National Olympiad in Informatics for Vietnamese Students</a> 
+               and <a href="https://icpc.global/">the International Collegiate Programming Contest (ICPC)</a>. More importantly, 
+               our vision is to encourage students to learn, to research in scientific problems, and to empower teamwork in collaborative and integrated environments.<br/><br/>
+               We always look for motivated graduate and undergraduate students to join our team.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<footer id="footer">
+   <div class="container-fluid">
+      <div class="row-fluid">
+         <div class="span5">
+            <h3>Contact Information</h3>
+            <p><b>Office Hours: </b>Monday-Saturday (8.30am - 5.30pm)</p>
+            <p><b>Phone: </b>(+84)-(028)-3724-4270 (Ext: 3433)</p>
+            <!-- <p><b>Cell: </b>617-981-9247</p> -->
+            <!-- <p><b>Email: </b><a href="mailto:hcmiu.cvip@gmail.com">hcmiu.cvip@gmail.com</a></p> -->
+            <a href="mailto:hcmiu.cvip@gmail.com">Email</a>
+         </div>
+         <div class="span2">
+            <a href="https://hcmiu.edu.vn/"><img src = "images/thumbs/Logo-CVIP.png" alt="illinois-logo"/></a>
+         </div>
+         <div class="span5">
+            <h3>Address</h3>
+            <p>Computer Vision and Image Processing Laboratory<br>
+               -----------<br>
+               International University - Vietnam National University HCMC<br>
+               School of Computer Science and Engineering<br>
+               Quarter 6, Linh Trung Ward, Thu Duc District<br>
+               Ho Chi Minh 700000, Vietnam<br>
+               Block A1, Room 611<br>
+            </p>
+            <a href="https://goo.gl/maps/XLT6NyjzXCMGLAUf6">Show Map</a>
+         </div>
+      </div>
+   </div>
+</footer>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script> $('#myCarousel').carousel(); </script>
+<script>
+   function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+       x.className += " responsive";
+    } else {
+       x.className = "topnav";
+    }
+ }
+</script>
+</body>
+</html>
