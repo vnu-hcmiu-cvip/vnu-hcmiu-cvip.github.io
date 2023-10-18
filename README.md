@@ -40,7 +40,7 @@ deb-src https://nginx.org/packages/mainline/ubuntu/ <CODENAME> nginx
 + CODENAME is the codename of an Ubuntu release. To get codename, run ```lsb_release -c```. 
 For example:
 ```
-deb https://nginx.org/packages/mainline/ubuntu/ focal nginx
+deb [arch=amd64] https://nginx.org/packages/mainline/ubuntu/ focal nginx
 deb-src https://nginx.org/packages/mainline/ubuntu/ focal nginx
 ```
 
@@ -70,7 +70,7 @@ server {
     listen       8080;
     server_name  www.hcmiucvip.com hcmiucvip.com; # Domain name
     location / {
-        root   /mnt/data/hcmiu-cvip.github.io; # Path to this repository in the host computer
+        root   /home/cvip-server/vnu-hcmiu-cvip.github.io; # Path to this repository in the host computer
         index  index.html index.htm;
     }
 }
@@ -92,7 +92,7 @@ sudo dpkg -i cloudflared-linux-amd64.deb
 cloudflared tunnel login
 ```
 Running this command will:
-- Open a browser window and prompt you to log in to your Cloudflare account. After logging in to your account, select your hostname.
+- Open a browser window and prompt you to log in to your Cloudflare account. After logging in to your account, select your hostname (i.e. `hcmiucvip.com`).
 - Generate an account certificate, the [cert.pem file](/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-useful-terms/#cert-pem), in the [default `cloudflared` directory](/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-useful-terms/#default-cloudflared-directory)
 
 #### 3. Create a tunnel and give it a name
@@ -113,7 +113,7 @@ cloudflared tunnel list
 
 First, create a new termianl and cd to the ***.cloudflared/***:
 ```
-cd .cloudflared/
+cd ~/.cloudflared/
 ```
 Second, create  a configuration file
 ```
@@ -122,13 +122,19 @@ sudo gedit config.yml
 
 Third, paster the config below and change the ***UUID*** to the created file:
 ```
-url: http://localhost:8000
 tunnel: <Tunnel-UUID>
-credentials-file: /root/.cloudflared/<Tunnel-UUID>.json
+credentials-file: /home/<User>/.cloudflared/<Tunnel-UUID>.json
+ingress:
+  - hostname: www.hcmiucvip.com
+    service: http://localhost:8080
+  - hostname: hcmiucvip.com
+    service: http://localhost:8080
+  - service: http_status:404
 ```
 ### 5. Start routing traffic
 ```
 cloudflared tunnel route dns cvip hcmiucvip.com
+cloudflared tunnel route dns cvip www.hcmiucvip.com
 ```
 
 ### 6. Run the tunnel. 
