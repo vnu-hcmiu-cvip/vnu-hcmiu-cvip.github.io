@@ -1,4 +1,4 @@
-# hcmiu-cvip.github.io
+# vnu-hcmiu-cvip.github.io
 
 To turn on the server, run the following
 ```
