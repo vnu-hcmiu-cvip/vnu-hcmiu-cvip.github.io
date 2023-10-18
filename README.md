@@ -1,4 +1,5 @@
 # vnu-hcmiu-cvip.github.io
+# Tested on Ubuntu
 
 To turn on the server, run the following
 ```
